@@ -9,6 +9,12 @@ description: Use when deeply analyzing a Quranic verse (ayah), exploring its roo
 
 A rigorous, multi-layered exploration framework for Quranic verses. Each verse is examined through linguistics, historical context, classical tafseer, hadith correlation, scientific inquiry, and contemporary relevance — with authentic references throughout.
 
+## Language and Format Rules
+
+- **All output must be written in scholarly Urdu.** Keep Arabic Islamic terms (tafseer, hadith, fitra, nazm, etc.), scholar names, book titles, transliterations, and URLs in their original form. Add Urdu equivalents in parentheses where helpful.
+- **Do not embed Arabic ayah text directly.** Instead, link to quran.com for reading the verse online (e.g., `[آیت پڑھیں](https://quran.com/24/35)`).
+- Transliterations of Arabic words/phrases are acceptable for linguistic analysis.
+
 ## Exploration Framework
 
 Follow these stages sequentially. At the end of each stage, pose 2-3 critical deep questions that bridge to the next stage.
@@ -16,9 +22,9 @@ Follow these stages sequentially. At the end of each stage, pose 2-3 critical de
 ### Stage 1: Identification and Arabic Text
 
 1. Identify the exact verse(s) — Surah name, number, ayah number(s)
-2. Present the full Arabic text
+2. Link to the verse on quran.com (e.g., `[آیت پڑھیں](https://quran.com/24/35)`) — do not embed Arabic text
 3. Provide a transliteration
-4. Give 3+ recognized English translations side-by-side:
+4. Give 3+ recognized Urdu/English translations side-by-side:
    - Sahih International
    - Muhammad Asad (The Message of the Quran)
    - Abdel Haleem
@@ -54,13 +60,27 @@ For each key word in the ayah:
 - Where does this ayah sit within the Surah's overall structure?
 - Makki or Madani? What period of revelation?
 
-#### Asbab al-Nuzul (Occasion of Revelation)
-- Historical circumstances that prompted the revelation
-- Reference authenticated narrations from:
-  - Asbab al-Nuzul by Al-Wahidi
-  - Lubab al-Nuqul by Al-Suyuti
+#### Shan-e-Nazool / Asbab al-Nuzul (Occasion & Story of Revelation)
 
-**Deep Questions:** Ask how the historical context shapes meaning. Would the ayah carry a different emphasis without knowing the occasion of revelation?
+Narrate the full story behind the revelation — not just a summary, but the event as it unfolded:
+
+1. **The Event/Trigger** — What specific incident, question, dispute, battle, or situation prompted this revelation? Narrate it as a story with context
+2. **Key Figures** — Which Sahabi, group, tribe, or individual was involved? What was their role?
+3. **The Setting** — Where and when did this occur? (Makkah/Madinah, before/after Hijrah, during which expedition or period)
+4. **The Question or Crisis** — If a question was asked to the Prophet ﷺ, what was it? If a conflict arose, what were the opposing positions?
+5. **The Revelation's Impact** — What changed after the ayah was revealed? How did the Sahaba respond? Did it settle a dispute, establish a ruling, or shift community practice?
+6. **Multiple Narrations** — If more than one occasion of revelation is reported, present all narrations with their chains and relative strength. Note which scholars considered each narration strongest
+
+**Primary Sources:**
+- Asbab al-Nuzul by Al-Wahidi (earliest dedicated work)
+- Lubab al-Nuqul fi Asbab al-Nuzul by Al-Suyuti
+- Al-Tabari's narrations in his tafseer
+- Sahih Bukhari and Muslim where they record the occasion
+- Al-Wahidi's chain analysis
+
+**Caution:** Not every ayah has a specific shan-e-nazool. If no authenticated narration exists, state this clearly rather than fabricating one. Some ayat were revealed as general guidance without a specific trigger — note this distinction.
+
+**Deep Questions:** How does knowing the shan-e-nazool change your understanding of the ayah? Is the ayah's ruling/guidance limited to that specific occasion (khaas) or universal (aam)? Would the ayah carry a different emphasis without knowing the occasion of revelation?
 
 ### Stage 4: Classical Tafseer (Scholarly Lenses)
 
