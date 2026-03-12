@@ -24,10 +24,11 @@ Follow these stages sequentially. At the end of each stage, pose 2-3 critical de
 1. Identify the exact verse(s) — Surah name, number, ayah number(s)
 2. Link to the verse on quran.com (e.g., `[آیت پڑھیں](https://quran.com/24/35)`) — do not embed Arabic text
 3. Provide a transliteration
-4. Give 3+ recognized Urdu/English translations side-by-side:
+4. Give 4+ recognized Urdu/English translations side-by-side:
    - Sahih International
    - Muhammad Asad (The Message of the Quran)
-   - Abdel Haleem
+   - Abdel Haleem (contextual/idiomatic approach)
+   - Dr. Mustafa Khattab (The Clear Quran — modern, accessible, nuanced)
    - Pickthall or Yusuf Ali (optional additional)
 
 **Deep Questions:** Ask questions about why translations differ, what nuances each captures or loses.
@@ -45,6 +46,11 @@ For each key word in the ayah:
    - Al-Mufradat fi Gharib al-Quran (Al-Raghib al-Isfahani)
 5. **Quranic frequency** — how many times the root appears in the Quran and in what contexts
 6. **Semantic field** — related words from same root, how meaning shifts across forms
+7. **Contemporary linguistic insights** — integrate word-for-word breakdowns from:
+   - **Nouman Ali Khan** (Bayyinah Institute — root word analysis, Arabic rhetoric)
+   - **Ustadha Taimiyyah Zubair** (rigorous root word and morphological breakdowns)
+   - **Dr. Mustafa Khattab** (nuances of Arabic words and their modern English equivalents)
+   - **M.A.S. Abdel Haleem** (idiomatic usage and how 7th-century Arabs actually used these words)
 
 **Deep Questions:** Ask about how the root's pre-Islamic meaning was transformed or elevated in the Quranic context. What does the choice of this specific morphological form reveal?
 
@@ -98,6 +104,17 @@ Consult and cite these major tafaseers — present their interpretations and not
 | Tadabbur-i-Quran | Amin Ahsan Islahi | Structural coherence (nazm) |
 | Al-Tahrir wa al-Tanwir | Ibn Ashur | Modern linguistic, maqasid-based |
 
+#### Contemporary Tafseer Sources
+
+Also integrate insights from contemporary scholars who bridge classical and modern understanding:
+
+- **Dr. Israr Ahmed** — Urdu Dars-e-Quran; philosophical, structured, nazm methodology (Farahi-Islahi school)
+- **Shaykh Sohaib Saeed** — Ibn 'Ashur Centre; translates classical works (e.g., Razi) and teaches classical exegesis methodology
+- **Shaykh Abdul Nasir Jangda** — Qalam Institute; Seerah-informed, accessible tafseer with deep historical context
+- **Dr. Yasir Qadhi** — Long-form surah tafseer; blends Western academic historical-critical research with traditional theology
+- **Nouman Ali Khan** — Bayyinah Institute; contextual tafseer rooted in Arabic linguistics and nazm
+- **Ustadha Taimiyyah Zubair** — Detailed Quranic translation and tafseer with linguistic rigor
+
 **Deep Questions:** Where do scholars disagree, and why? What methodological differences lead to divergent readings?
 
 ### Stage 5: Hadith Correlation
@@ -116,6 +133,15 @@ Consult and cite these major tafaseers — present their interpretations and not
 - **Sound and rhythm** — phonetic qualities, how the ayah sounds when recited
 - **Iltifat** (shift in person/address) — if present, what effect does it produce?
 - **Contrast and juxtaposition** — paired concepts, opposing ideas
+
+#### Literary Structure and Academic Analysis
+
+Also consider insights from scholars who specialize in the Quran's literary architecture:
+
+- **Mustansir Mir** — Nazm (thematic coherence) and literary structure in the Quran
+- **Angelika Neuwirth** — Corpus Coranicum; Meccan surahs as oral/liturgical events in Late Antique context
+- **Nicolai Sinai** — Literary and structural analysis; how theology develops across the text
+- **Carl W. Ernst** — Ring composition and structural reading methods
 
 **Deep Questions:** What would be lost if the ayah were phrased differently? Why did the Quran choose this exact construction?
 
@@ -144,6 +170,14 @@ Examine how this ayah's guidance applies across time:
    - Environmental challenges
    - Social justice and human rights
    - Mental health and spiritual wellness
+
+#### Contemporary Ethics and Reformist Perspectives
+
+When relevant, engage with scholars who focus on ethics, justice, and re-evaluating traditional interpretations:
+
+- **Khaled Abou El Fadl** — Quranic ethics; linguistic analysis countering puritanical interpretations; emphasis on morality and beauty (husn)
+- **Amina Wadud** & **Asma Barlas** — Islamic feminist hermeneutics; egalitarian readings of the Arabic text; examining whether patriarchal interpretations stem from the text or human bias
+- **Dr. Omar Suleiman** — Social justice, spirituality, and contemporary ethical application
 
 **Deep Questions:** Does the ayah's relevance shift across eras or remain constant? What new dimensions emerge in the modern context that earlier scholars could not have anticipated?
 
