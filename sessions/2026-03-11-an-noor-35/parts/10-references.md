@@ -56,6 +56,37 @@
 - **Reality is Constructed by Your Brain** — Stanford Neuroscience — [Stanford](https://neuroscience.stanford.edu/news/reality-constructed-your-brain-here-s-what-means-and-why-it-matters)
 - **Olive Oil Illumination** — [Anne's Italy](https://www.annesitaly.com/2020/10/29/olive-oil-illuminates/)
 
+### معاصر علماء اور محققین
+
+- **نعمان علی خان (Bayyinah Institute):**
+  - "Striking Examples from the Quran" — Episode 10 & 11: "A Lamp in A Niche" (رمضان ۲۰۲۵) — [Muslim Central #10](https://muslimcentral.com/nouman-ali-khan-striking-examples-in-the-quran-10-a-lamp-in-a-niche/)، [Muslim Central #11](https://muslimcentral.com/nouman-ali-khan-striking-examples-in-the-quran-11-a-lamp-in-a-niche-24-35)
+  - "Ramadan Gems 2019 Night 19: The Light of Revelation" — [Muslim Central](https://muslimcentral.com/nouman-ali-khan-ramadan-2019-gems-night-19-the-light-of-revelation-allahs-guidance/)
+  - "Light Up Your Heart" — خطبہ جمعہ — [HalalTube](https://www.halaltube.com/nouman-ali-khan-light-up-your-heart)
+  - "Divine Speech" (کتاب) — [Goodreads](https://www.goodreads.com/book/show/33789656-divine-speech)
+  - Bayyinah TV — [bayyinah.com/strikingexamples](https://bayyinah.com/strikingexamples/)
+  - "Light upon Light" — آیت النور کی تفصیلی تفسیر — [YouTube](https://www.youtube.com/watch?v=0HiN9GgXZnM)
+  - "A Lamp in a Niche EP 11" — Striking Examples سیریز — [YouTube](https://www.youtube.com/watch?v=FUwiHCScZLY)
+  - "Light of Heavens EP 10" — Striking Examples سیریز — [YouTube](https://www.youtube.com/watch?v=CiaYuUMmp9U)
+  - "Ramadan 2019 Tafseer" — نورِ وحی اور ہدایت — [YouTube](https://www.youtube.com/watch?v=ute_BL8or5E)
+
+- **ڈاکٹر عمر سلیمان (Yaqeen Institute):**
+  - "Allah is the Light of the Heavens and the Earth" — Qur'anic Parables Episode 3 (۱۶ جون ۲۰۲۰) — [Yaqeen Institute](https://yaqeeninstitute.org/read/post/allah-is-the-light-of-the-heavens-and-the-earth-quranic-parables-episode-3)
+  - [Muslim Central Audio](https://muslimcentral.com/omar-suleiman-allah-is-the-light-of-the-heavens-and-the-earth-quranic-parables-3)
+
+- **ڈاکٹر یاسر قاضی:**
+  - "Tafseer of Ayat Noor" — مکمل تفسیری درس (جولائی ۲۰۱۰) — [Internet Archive](https://archive.org/details/TafseerOfAyatNoor)
+  - "The Verse of Light" — جمعہ خطبہ — [HalalTube](https://www.halaltube.com/yasir-qadhi-the-verse-of-light)
+  - "The Parables of the Quran #22" — سورۃ النور ۳۵ — [Muslim Central](https://muslimcentral.com/yasir-qadhi-the-parables-of-the-quran-22-surah-al-nur-35-allah-is-the-light-of-the-heavens-and-earth/)
+  - "The Parables of the Qur'an" (کتاب) — [Amazon](https://www.amazon.com/Parables-Quran-Dr-Yasir-Qadhi/dp/1847741797)
+  - "Tafsir of Ayat An-Nur" — لیکچر (ICNA کنونشن) — ابن عباس کے منہج سے تفسیر، ۱۰۰+ رسائل کا ذکر، حدیثِ حجاب و اسراء — [YouTube](https://www.youtube.com/watch?v=ivRSoJOSEhI)
+  - "Explanation of Ayat 35 of Surah An-Nur" — لیکچر (EPIC مسجد) — تفصیلی تفسیر بروایتِ ابن عباس، تفسیری مناہج کا بیان، قلب بطور شیشہ — [YouTube](https://www.youtube.com/watch?v=UwLO8cojBtQ)
+
+- **حمزہ یوسف (Zaytuna College):**
+  - "Purification of the Heart" (کتاب — تزکیۂ قلب) — [Amazon](https://www.amazon.com/Purification-Heart-Symptoms-Spiritual-Diseases/dp/1929694156)، [PDF](https://data.nur.nu/Kutub/English/Hamza-Yusuf_Purification-of-the-Heart.pdf)
+
+- **مفتی اسماعیل مینک:**
+  - Tafseer of Surah Al Noor — [Facebook](https://www.facebook.com/AllAboutIslamOfficials/videos/tafseer-of-surah-al-noor-by-mufti-menk/719896102040010/)
+
 ### دیگر مصادر
 
 - **اردو تراجم:** محمد جوناگڑھی، سید ابوالاعلیٰ مودودی (تفہیم القرآن)

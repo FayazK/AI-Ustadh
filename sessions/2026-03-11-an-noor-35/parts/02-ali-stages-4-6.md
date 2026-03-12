@@ -61,6 +61,20 @@
 
 **"نورٌ علیٰ نور":** قرطبی کے نزدیک اس کا مطلب ہے: ایمان کا نور اور عمل کا نور — یا — قرآن کا نور اور فطرت کا نور۔ یعنی جب وحی کا نور فطرتِ سلیمہ پر پڑتا ہے تو "نورٌ علیٰ نور" ہوتا ہے۔
 
+#### نعمان علی خان کی تحقیق سے اضافہ: یہودیت اور مسیحیت کے درمیان توازن
+
+نعمان علی خان "Striking Examples" سیریز (ایپیسوڈ ۱۱) میں ایک نہایت گہرا بین المذاہب تجزیہ پیش کرتے ہیں جو کلاسیکی تفاسیر میں اس صراحت سے نہیں ملتا۔ وہ فرماتے ہیں کہ سورۃ النور کا ڈھانچہ خود ایک بیان ہے — **قانونی احکام** (شریعت) چاروں طرف ہیں اور **روحانی نور** بیچ میں ہے۔ یہ بالکل وہی توازن ہے جو اسلام یہودیت اور مسیحیت کے درمیان قائم کرتا ہے:
+
+> "Judaism before Islam... what people did with the shariah of Musa is they made it entirely legal focused... and through Isa, Allah introduced the spiritual core of the religion. So where Judaism became highly legal, Christianity became highly spiritual. What did Allah do in this surah? He surrounded it with the legal and in the heart of it he put the spiritual."
+
+مزید برآں، نعمان علی خان مسیحی عقیدے کے "ٹوٹے ہوئے شیشے" (broken glass) کے تصور اور اسلام کے "صاف ہونے والے شیشے" کے تصور میں فرق واضح کرتے ہیں: مسیحیت میں انسان جنت سے گرا تو خدا کی صورت ایسے ٹوٹ گئی جیسے شیشہ ٹوٹتا ہے — اس لیے نجات دہندہ (Redeemer) ضروری ہوا۔ لیکن قرآن میں اللہ نے شیشے (قلب) کو طاقچے (مشکوٰة) میں **محفوظ** رکھا ہے:
+
+> "Our glass is not broken. It can get dirty and you can clean it again... you can redeem yourself. You don't need somebody else, some other creation, to come and redeem you. Allah — you can make tawba and you can redeem yourself."
+
+یہ تعبیر "لَا شَرْقِيَّةٍ وَلَا غَرْبِيَّةٍ" کا ایک بالکل نیا مفہوم کھولتی ہے — نہ خالص قانونی (یہودیت/مشرقی) نہ خالص روحانی (مسیحیت/مغربی)، بلکہ دونوں کا حسین امتزاج۔
+
+(حوالہ: [Striking Examples #11: A Lamp in a Niche — Bayyinah TV](https://www.bayyinahtv.com/))
+
 (حوالہ: [Tafsir al-Qurtubi — QuranX](https://quranx.com/tafsirs/24.35))
 
 ---
@@ -138,6 +152,34 @@
 | ابن عاشور | اللہ (ہدایت) | مومن کا سینہ | جغرافیائی + بلاغی (احتراس) |
 | مودودی | اللہ (نور مطلق) | کائنات | چراغ کی صفت |
 | اصلاحی | اللہ (ہدایت عملی) | مومن کا سینہ | نظم کے تناظر میں |
+| نعمان علی خان | اللہ / مومن | مومن کا قلب | آفاقیت — کسی تہذیب تک محدود نہیں |
+| یاسر قاضی | اللہ / مومن / نبی ﷺ | مومن کا سینہ | ملّتِ ابراہیمی / بیت المقدس |
+
+---
+
+#### معاصر علماء کی تفسیری آراء
+
+**نعمان علی خان (Bayyinah Institute):** استاذ نعمان علی خان نے اس آیت پر چار الگ الگ مواقع پر تفصیلی گفتگو فرمائی ہے — خاص طور پر "Striking Examples 2.0" سیریز (رمضان ۲۰۲۵) اور "Ramadan Gems 2019 Night 19"۔ ان کا بنیادی نکتہ یہ ہے کہ یہ پوری تمثیل **انسانی دل کی کہانی** ہے:
+
+- **مشکوٰة** = قلبِ مومن (believer's heart) — جس طرح طاق میں رکھا چراغ پورے کمرے کو روشن کرتا ہے، مومن کے دل کا نور صرف اندر نہیں رہتا بلکہ **باہر بھی پھیلتا ہے**
+- **مصباح** = ایمان و ہدایت کی روشنی
+- **زجاجة** = دل کی صفائی اور شفافیت — جتنا دل صاف ہوگا، اتنی روشنی باہر نکلے گی
+- **زیتون کا تیل** = فطرت — انسانی فطرت میں اللہ کو پہچاننے کی صلاحیت پہلے سے موجود ہے
+- **آگ** = وحی — وہ بیرونی محرک جو فطرت کو روشن کرے
+
+نعمان علی خان کا سب سے اہم نکتہ یہ ہے کہ **"يَكَادُ زَيْتُهَا يُضِيءُ"** — تیل خود بخود جلنے کے "قریب" ہے — فطرت بغیر وحی ادھوری ہے۔ "نورٌ علیٰ نور" کی تعبیر میں دو نور جمع ہو رہے ہیں: **(۱)** فطرت کا نور اور **(۲)** وحی کا نور — جب یہ دونوں مل جائیں تو نور پر نور ہو جاتا ہے۔
+
+نعمان علی خان اپنے "Striking Examples" سیریز (ایپیسوڈ ۱۱) میں ایک اور گہرا نکتہ بیان کرتے ہیں: **علم بغیر روشنی** (knowledge without illumination) کا خطرہ۔ وہ فرماتے ہیں کہ چراغ میں تیل بھرنے کا مطلب یہ نہیں کہ چراغ جل گیا — علم حاصل کرنا ایک بات ہے اور اس علم سے دل کا منور ہونا بالکل دوسری بات:
+
+> "It could be that a human being is filled with knowledge — good knowledge — like a lamp is filled with good oil. But they never really connected that knowledge to their heart and they never really illuminated themselves with that knowledge. Learning alone is not enough for the light to be lit up."
+
+یہ نکتہ قرآنی آیت "مَثَلُ الَّذِينَ حُمِّلُوا التَّوْرَاةَ ثُمَّ لَمْ يَحْمِلُوهَا كَمَثَلِ الْحِمَارِ يَحْمِلُ أَسْفَارًا" (الجمعہ ۶۲:۵) سے مربوط ہے — جنہوں نے تورات کا بوجھ اٹھایا مگر اسے اپنے اوپر لاگو نہ کیا، ان کی مثال گدھے کی سی ہے جو کتابیں لادے ہوئے ہو۔ علم بغیر نورِ قلب محض بوجھ ہے — آگ بھی باہر سے آنی چاہیے، یعنی اللہ کی مشیت اور توفیق کے بغیر علم نور میں نہیں بدلتا۔
+
+(حوالہ: [Striking Examples #10 — Muslim Central](https://muslimcentral.com/nouman-ali-khan-striking-examples-in-the-quran-10-a-lamp-in-a-niche/)، [Striking Examples #11 — Bayyinah TV](https://www.bayyinahtv.com/)، [Ramadan Gems 2019 Night 19 — Muslim Central](https://muslimcentral.com/nouman-ali-khan-ramadan-2019-gems-night-19-the-light-of-revelation-allahs-guidance/))
+
+**ڈاکٹر یاسر قاضی:** ڈاکٹر یاسر قاضی اسے **قرآن مجید کی سب سے پیچیدہ تمثیل** قرار دیتے ہیں — ان کے مطابق اس ایک آیت پر **۵۰ سے زائد مستقل رسالے** لکھے گئے ہیں۔ وہ تفسیر کے مختلف طیف (spectrum) بیان کرتے ہیں: فلسفیانہ تعبیر سے لے کر مابعدالطبیعاتی، روحانی، اور آرتھوڈکس تشریحات تک۔ زیتون کے درخت کی ایک خاص تعبیر میں وہ اسے **ملّتِ ابراہیمی** اور **بیت المقدس** کی سرزمین — انبیاء کی سرزمین — سے جوڑتے ہیں۔ نیز وہ ابوذر غفاری رضی اللہ عنہ کی حدیث کا حوالہ دیتے ہیں جس میں نبی ﷺ سے پوچھا گیا: "کیا آپ نے اللہ کو دیکھا؟" تو فرمایا: **"نور تھا، میں اسے کیسے دیکھ سکتا تھا"**۔
+
+(حوالہ: [Tafseer of Ayat Noor — Internet Archive](https://archive.org/details/TafseerOfAyatNoor)، [The Parables of the Quran #22 — Muslim Central](https://muslimcentral.com/yasir-qadhi-the-parables-of-the-quran-22-surah-al-nur-35-allah-is-the-light-of-the-heavens-and-earth/))
 
 #### ربط کے سوالات (Bridging Questions)
 
@@ -364,6 +406,22 @@
 
 **۴۔ مکمل نظام:**
 - یہ محض ایک تشبیہ نہیں بلکہ ایک **مکمل نظامِ نور** (system of illumination) ہے جس میں ظرف (مشکوٰة)، منبع (مصباح)، وسیلہ (زجاجة)، ایندھن (زیت) اور ذریعہ (شجرة) سب موجود ہیں
+
+#### نعمان علی خان کی تحقیق سے اضافہ: کیمرے کا زوم اور مثالوں کی جمع
+
+نعمان علی خان "Striking Examples" سیریز میں اس آیت کے بلاغی ڈھانچے کا ایک ایسا تجزیہ پیش کرتے ہیں جو کلاسیکی تفاسیر میں اس طرح بیان نہیں ہوا — وہ اسے **"کیمرے کا زوم"** (camera zoom) کہتے ہیں:
+
+> "You're in the room, you saw light. You say 'where did it come from?' And you turn back and you see a niche. You go a little closer — what do you notice inside the niche? A lamp. Then you go a little closer, you notice it's a very pristine glass. Then you start staring inside the glass and you notice it's extremely shiny. But inside it is a very pure kind of oil. What is the camera doing? It's zooming, zooming, zooming."
+
+یعنی آیت کا بلاغی ڈھانچہ ایک **بتدریج تقریب** (progressive zoom-in) ہے: کمرے سے طاقچے تک، طاقچے سے چراغ تک، چراغ سے شیشے تک، شیشے سے تیل تک — اور پھر اچانک **زوم آؤٹ** ہوتا ہے: تیل سے درخت تک، درخت سے سورج تک، سورج سے اللہ تعالیٰ تک۔ یہ ساختی حرکت بذاتِ خود ایک بلاغی شاہکار ہے — مشبّہ بہ (مثال) کی تصویر خود متحرک ہے، جامد نہیں۔
+
+نیز نعمان علی خان "وَيَضْرِبُ اللَّهُ الْأَمْثَالَ لِلنَّاسِ" میں **"الْأَمْثَالَ"** (مثالوں) کی جمع پر غور کرتے ہوئے فرماتے ہیں کہ یہ ایک مثال نہیں بلکہ **متعدد مثالیں** ہیں جو ایک آیت میں جمع ہو گئی ہیں:
+
+> "Allah could have said 'mathal' — this is one example for people. But it's as if Allah is telling us: even within this example, mishkat is a profound example by itself. Misbah is itself another example. Zujaja is another example. Each one of them is profound lessons by themselves — all compiled together."
+
+یہ نکتہ بلاغی اعتبار سے بہت اہم ہے — یہ آیت صرف ایک تمثیل مرکب نہیں بلکہ **تمثیلات کا مجموعہ** ہے، جس کا ہر جزو اپنے اندر ایک مکمل مثال رکھتا ہے۔ یہی وجہ ہے کہ مفسرین نے ہر جزو کی علیحدہ تفسیر کی ہے اور ہر جزو سے الگ الگ سبق اخذ کیے ہیں۔
+
+(حوالہ: [Striking Examples #11 — Bayyinah TV](https://www.bayyinahtv.com/))
 
 ---
 

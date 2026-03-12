@@ -71,6 +71,18 @@ Pickthall نے "Light" کو بلاتاویل چھوڑ دیا ہے — "Allah is 
 
 قابلِ غور بات یہ ہے کہ قرآن میں "نور" ہمیشہ واحد آتا ہے جبکہ "ظلمات" (اندھیرے) جمع آتے ہیں — اس سے یہ اشارہ ملتا ہے کہ حق ایک ہے اور باطل متعدد۔
 
+#### نعمان علی خان کی تحقیق سے اضافہ: "نور" کا دوہرا مفہوم
+
+نعمان علی خان اپنے لیکچر "Light upon Light" میں ایک انتہائی اہم لسانی نکتہ اٹھاتے ہیں کہ عربی زبان میں "نور" صرف روشنی کے لیے نہیں بلکہ **بصارت** (eyesight/vision) کے لیے بھی مستعمل ہے۔ وہ فرماتے ہیں:
+
+> "One of the words for eyes themselves is noor. Vision itself is also called noor. So in order for us to appreciate vision, to see reality around us, there are two things necessary: the light inside of you — the light of your eyes — and also you need light outside. A light inside and a light outside. If any one of those is missing, you're as good as blind."
+
+یعنی حقیقت کو دیکھنے کے لیے **دو نور** درکار ہیں: اندرونی نور (بصارت) اور بیرونی نور (روشنی)۔ اگر ان میں سے ایک بھی غائب ہو تو انسان نابینا ہے۔ نعمان علی خان اس جسمانی اصول کو روحانی سطح پر لے جاتے ہیں — انسان کے اندر فطرت کا نور ہے اور باہر وحی کا نور ہے، اور "نُورٌ عَلَىٰ نُورٍ" انہی دو نوروں کے ملاپ کا بیان ہے۔ یہ لسانی نکتہ آیت کے مجموعی پیغام کو سمجھنے میں بنیادی اہمیت رکھتا ہے۔
+
+نیز وہ امام رازی کے حوالے سے بتاتے ہیں کہ قبل از اسلام عربوں میں "نور" کا ایک اور مفہوم بھی رائج تھا — **نظم و ترتیب** (order/organization)۔ عرب کہتے تھے: "لا نُورَ فی ہٰذا الامر" — یعنی اس معاملے میں کوئی نظم نہیں۔ اس اعتبار سے "اللَّهُ نُورُ السَّمَاوَاتِ وَالْأَرْضِ" کا ایک مضمر معنیٰ یہ بھی ہے کہ **اللہ ہی وہ ذات ہے جس نے آسمانوں اور زمین میں نظم و ترتیب قائم کی** — جس طرح جسمانی قوانین (طبیعیات، کیمیا، کشش ثقل) کائنات کو چلاتے ہیں، اسی طرح اخلاقی اور روحانی قوانین بھی اللہ کے مقرر کردہ ہیں، مگر انہیں دیکھنے کے لیے وحی کے نور کی ضرورت ہے۔
+
+(حوالہ: [Light upon Light — Nouman Ali Khan](https://www.youtube.com/results?search_query=nouman+ali+khan+light+upon+light+ayat+noor)، [Striking Examples #10 — Bayyinah TV](https://www.bayyinahtv.com/))
+
 (حوالہ: [المفردات فی غریب القرآن — راغب اصفہانی](https://arabiclexicon.hawramani.com/al-raghib-al-isfahani-al-mufradat-fi-gharib-al-quran/))
 
 #### ۲۔ مِشْكَاة (م-ش-ك / ش-ك-و)
@@ -83,6 +95,24 @@ Lane's Lexicon میں اس کی تعریف "a niche in a wall" کے طور پر 
 
 تفسیری روایت میں حضرت ابن عباس رضی اللہ عنہما نے اسے مومن کے سینے سے تشبیہ دی ہے — جس طرح طاقچہ چراغ کو محفوظ رکھتا ہے، سینہ قلب کو محفوظ رکھتا ہے۔
 
+#### نعمان علی خان کی تحقیق سے اضافہ: مشکوٰة کے چار کردار
+
+نعمان علی خان اپنی سیریز "Striking Examples from the Quran" (ایپیسوڈ ۱۱: "A Lamp in a Niche") میں مشکوٰة کے **چار منفرد کردار** بیان کرتے ہیں جو تفسیری ادب میں عموماً مفصل نہیں ملتے:
+
+**اوّل — غیر مزاحمانہ روشنی:** طاقچے میں رکھا چراغ راستے میں حائل نہیں ہوتا — برخلاف اس چراغ کے جو چھت سے لٹکا ہو یا فرش پر رکھا ہو۔ نعمان علی خان فرماتے ہیں کہ یہ مومن کی دعوت کی خصوصیت ہے — وہ نور پھیلاتا ہے بغیر لوگوں کے راستے میں رکاوٹ بنے:
+
+> "The believer's light... can just be shared without them creating interruptions or creating annoyances or creating even danger for others. There's a gentleness in the way that a believer spreads light just like there's a gentleness in the way in which the niche spreads light."
+
+**دوم — ہدف بند روشنی (Directional Focus):** طاقچے کا محراب ایک مخصوص سمت میں روشنی مرتکز کرتا ہے — کمرے کے بعض حصے زیادہ روشن ہوتے ہیں اور بعض کم۔ نعمان علی خان کہتے ہیں کہ مومن کی ترجیحات بھی ایسی ہی ہوتی ہیں — وہ اہم امور پر زیادہ توجہ دیتا ہے اور معمولی باتوں کو اندھیرے میں چھوڑ دیتا ہے۔
+
+**سوم — نرم روشنی (Ambient Light):** طاقچے کی روشنی پہلے دیوار سے ٹکراتی ہے پھر منعکس ہو کر کمرے میں پھیلتی ہے — یہ **نرم اور خوشگوار** (ambient) روشنی ہے، نہ کہ سیدھی تیز روشنی جو آنکھوں کو چندھیا دے۔ نعمان علی خان اسے دعوت کے اسلوب سے جوڑتے ہیں:
+
+> "Overexposure to light can actually be blinding... the ambient light is an imagery for the believer: when they spread the goodness that they have inside them, they don't spread them in the kind of intensity that blinds someone."
+
+**چہارم — حفاظتی نظام:** طاقچہ چراغ کو ہوا، حادثات اور بچوں کی دسترس سے محفوظ رکھتا ہے۔ اگر آگ والا چراغ گر جائے تو پورا گھر جل سکتا ہے — اسی طرح اگر قلب کی حفاظت نہ ہو تو فساد پھیلتا ہے۔ نعمان علی خان پسلیوں کے پنجرے (rib cage) کو مشکوٰة سے تشبیہ دیتے ہیں — اللہ نے دل اور دماغ کو ہڈیوں کے سب سے مضبوط حفاظتی نظام میں رکھا ہے۔
+
+(حوالہ: [Striking Examples #11: A Lamp in a Niche — Bayyinah TV](https://www.bayyinahtv.com/))
+
 #### ۳۔ مِصْبَاح (ص-ب-ح)
 
 جڑ "ص-ب-ح" کا بنیادی مفہوم صبح، روشنی اور صاف ہونا ہے۔ اسی جڑ سے:
@@ -94,6 +124,10 @@ Lane's Lexicon میں اس کی تعریف "a niche in a wall" کے طور پر 
 راغب اصفہانی لکھتے ہیں کہ مصباح وہ چراغ ہے جو اندھیرے میں اسی طرح روشنی پھیلاتا ہے جس طرح صبح رات کا اندھیرا دور کرتی ہے۔ یہ تشبیہ بلیغ ہے — قرآن میں ہدایت کا نور اُس چراغ کی مانند ہے جو تاریک رات میں صبح لے آئے۔
 
 یہ لفظ قرآن میں تین مقامات پر آیا ہے — یہاں (۲۴:۳۵)، سورۃ الملک (۶۷:۵) میں "مَصَابِيحَ" (ستاروں کے لیے)، اور اسی مفہوم میں سورۃ فصلت (۴۱:۱۲) میں۔
+
+**نعمان علی خان کا منفرد لسانی نکتہ:** استاذ نعمان علی خان (Bayyinah Institute) نے اپنی سیریز "Striking Examples from the Quran" (رمضان ۲۰۲۵) میں "مصباح" کا ایک انتہائی دلچسپ لسانی تجزیہ پیش کیا ہے۔ وہ فرماتے ہیں کہ قرآن نے عام لفظ "سراج" (lamp) استعمال نہیں کیا بلکہ **"مصباح"** کا لفظ چنا ہے — جو "صبح" سے ماخوذ ہے۔ مصباح لفظی طور پر **"صبح بنانے والا آلہ"** ہے — یعنی یہ محض ایک چراغ نہیں بلکہ وہ آلہ ہے جو رات کے اندھیرے میں **فجر اور نئے دن** کا تجربہ دوبارہ پیدا کرتا ہے۔ یہ لفظی انتخاب قرآنی بلاغت کی ایک شاندار مثال ہے — ایمان کا نور محض روشنی نہیں، بلکہ ایک نئی صبح کا آغاز ہے۔
+
+(حوالہ: [Striking Examples #10: A Lamp in A Niche — Muslim Central](https://muslimcentral.com/nouman-ali-khan-striking-examples-in-the-quran-10-a-lamp-in-a-niche/))
 
 #### ۴۔ زُجَاجَة (ز-ج-ج)
 
@@ -141,6 +175,18 @@ Lane's Lexicon میں اس کی تعریف "a niche in a wall" کے طور پر 
 
 یہ سلسلہ ایک مکمل نظامِ نور (system of illumination) بیان کرتا ہے — نور کا ذریعہ، اس کا ظرف، اس کا منبع، اس کا وسیلہ اور اس کا ایندھن۔
 
+#### نعمان علی خان کی تحقیق سے اضافہ: اندر سے باہر کا سفر
+
+نعمان علی خان "Striking Examples" سیریز (ایپیسوڈ ۱۱) میں ایک نہایت دلچسپ ساختی مشاہدہ پیش کرتے ہیں۔ وہ کہتے ہیں کہ آیت کی تصویر **اندرونی مکان** (indoor) سے شروع ہوتی ہے — مشکوٰة، مصباح، زجاجة — یہ سب گھر کے اندر کی چیزیں ہیں۔ لیکن پھر اچانک "شَجَرَةٍ مُبَارَكَةٍ" آ جاتا ہے — درخت تو **باہر** ہوتا ہے:
+
+> "Where is the image of everything that's going on — is that indoors or outdoors? We're indoors. Now there's a niche, there's a lamp inside, and Allah says there's fuel inside that lamp, and that fuel comes from a tree. Trees — indoors or outdoors? It's outdoors. So Allah is making us leave the home and think about something outside."
+
+یہ اندر سے باہر کا انتقال بتاتا ہے کہ مومن کے دل کا چراغ **خود کفیل** نہیں — اسے بیرونی ذریعے (وحی، درخت، سورج کی روشنی) سے ایندھن چاہیے۔ اور جب ہم اس ایندھن کا سراغ لگاتے ہیں تو درخت سے سورج تک، سورج سے اللہ تعالیٰ تک پہنچ جاتے ہیں — یعنی آیت کی تصویر ایک **زوم آؤٹ** (zoom out) ہے جو گھر کے کونے سے شروع ہو کر کائنات کے خالق تک لے جاتی ہے۔ نعمان علی خان اسے یوں بیان کرتے ہیں:
+
+> "You were in the room — where's the source of the light? The niche. What's the source in the niche? The lamp. The glass. The oil. The tree. The sun. In other words, this lamp is actually a manifestation of a gift given from the ultimate light source which isn't even from this earth."
+
+(حوالہ: [Striking Examples #11 — Bayyinah TV](https://www.bayyinahtv.com/))
+
 #### ربط کے سوالات (Bridging Questions)
 
 > ۱۔ "مشکوٰة" کا قرآن میں صرف ایک بار آنا (hapax legomenon) کیا اس لفظ کی خصوصیت بڑھاتا ہے؟ کیا اس کا غیرعربی اصل سے ہونے کا امکان اس آیت کے بین الثقافتی پیغام سے جُڑا ہے؟
@@ -177,6 +223,18 @@ Lane's Lexicon میں اس کی تعریف "a niche in a wall" کے طور پر 
 8. **آیات ۴۱-۶۴:** کائنات میں اللہ کے نور کی نشانیاں اور مزید احکام
 
 غور کریں: سورت پہلے معاشرتی اور اخلاقی احکام بیان کرتی ہے (ظاہری پاکیزگی)، پھر آیت النور میں ان احکام کی روحانی بنیاد بیان کرتی ہے (باطنی نور)۔ گویا آیت ۳۵ سورت کا **قلب** ہے — تمام احکام اسی نور سے نکلتے ہیں اور اسی کی طرف لوٹتے ہیں۔
+
+#### نعمان علی خان کی تحقیق سے اضافہ: قانون اور روحانیت کا توازن
+
+نعمان علی خان نے متعدد لیکچرز میں سورۃ النور کے اس ڈھانچے کو ایک بالکل منفرد زاویے سے بیان کیا ہے۔ وہ فرماتے ہیں کہ سورت میں تقریباً **۱۴ مقامات** پر شرعی احکام ہیں — زنا کی سزا، قذف، پردے کے احکام، اجازت لے کر داخل ہونا — اور عین ان تمام قانونی احکام کے **بیچ میں** آیت النور آتی ہے۔ یہ ترتیب قصدی ہے:
+
+> "Surah An-Noor is filled with — some argue — 14 sections and almost all of the sections have to do with Islamic law... And in the middle of all of this, there's a passage on light. You know what that tells you? That without light, without iman, without that faith, that spirituality inside of you, those laws won't mean anything to you."
+
+نعمان علی خان اسے مزید واضح کرنے کے لیے حجاب کی مثال دیتے ہیں — وہ کہتے ہیں کہ حجاب کا حکم سورۃ النور میں ہے اور اس کی اصل محرک **قلبی و روحانی** ہے، نہ کہ محض سماجی یا قانونی: "to Allah, all of those regulations — even the hijab — is a spiritual matter, not a social one, not a regulatory one. It has to do with the heart."
+
+یہ مشاہدہ سورت کے سیاق و سباق کو سمجھنے میں بنیادی اہمیت رکھتا ہے — آیت ۳۵ کے فوراً پہلے نگاہیں نیچی رکھنے (آیت ۳۰-۳۱) اور پردے کے احکام ہیں، اور فوراً بعد مساجد اور ذکرِ الٰہی کا بیان ہے۔ نعمان علی خان کے مطابق یہ ترتیب بتاتی ہے کہ **ظاہری احکام کی تعمیل کا انحصار باطنی نور پر ہے** — بغیر نور کے قانون بے معنیٰ ہو جاتے ہیں۔
+
+(حوالہ: [Light upon Light — Nouman Ali Khan](https://www.youtube.com/results?search_query=nouman+ali+khan+light+upon+light)، [Striking Examples #10 — Bayyinah TV](https://www.bayyinahtv.com/))
 
 (حوالہ: [Wikipedia — An-Nur](https://en.wikipedia.org/wiki/An-Nur)، [Maududi — Surah An-Nur Introduction](https://www.islamicstudies.info/tafheem.php?sura=24))
 
