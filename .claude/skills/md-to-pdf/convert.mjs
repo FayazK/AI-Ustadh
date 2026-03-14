@@ -73,7 +73,7 @@ const htmlBody = marked.parse(mdContent);
 const css = `
 @page {
   size: A4;
-  margin: 2cm 2.5cm;
+  margin: 1cm 1.5cm;
 
   @bottom-center {
     content: counter(page);
