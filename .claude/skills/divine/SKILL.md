@@ -92,14 +92,6 @@ Each session creates a directory under `sessions/`:
 
 ```
 sessions/YYYY-MM-DD-divine-[name]/
-  research/
-    nouman-ali-khan.txt         ← YouTube transcript
-    omar-suleiman.txt           ← YouTube transcript
-    hamza-yusuf.txt             ← YouTube transcript
-    dr-israr-ahmed.txt          ← YouTube transcript
-    ...
-    current-events.md           ← WebSearch results for Layer 6
-    index.md                    ← Research index
   parts/
     00-header.md                ← Meta: title, date, verse link, translation
     01-overview-layers-1-3.md   ← High-level overview + Layers 1-3
@@ -119,7 +111,7 @@ digraph divine_flow {
     node [shape=box];
 
     parse [label="Step 1: Parse & Identify\n(create directory + 00-header.md)"];
-    research [label="Step 2: YouTube Research + WebSearch\n(transcripts → research/)"];
+    research [label="Step 2: Gather Research\n(dispatch research skill)"];
     layers13 [label="Step 3: Overview + Layers 1-3\n(01-overview-layers-1-3.md)"];
     layers45 [label="Step 4: Layers 4-5\n(02-layers-4-5.md)"];
     layer6 [label="Step 5: Layer 6 — The Living Ayah\n(03-layer-6-living-ayah.md)"];
@@ -135,7 +127,7 @@ digraph divine_flow {
 
 - Resolve the user's input to exact Surah number, ayah number(s)
 - For themes/events, use WebSearch to identify the core passage(s) and present 2-3 options for user confirmation
-- Create the session directory: `sessions/YYYY-MM-DD-divine-[name]/parts/` and `sessions/YYYY-MM-DD-divine-[name]/research/`
+- Create the session directory: `sessions/YYYY-MM-DD-divine-[name]/parts/`
 - Write `parts/00-header.md`:
 
 ```markdown
@@ -145,6 +137,7 @@ digraph divine_flow {
 **نوعیت:** تدبر و تفکر — اللہ کا پیغام سمجھنا
 **آیت:** [quran.com link]
 **ترجمہ:** [Urdu translation — clear, accessible]
+**Research:** research/<topic-key>/
 
 > *یہ تحقیق لسانی تجزیے یا فنی تفسیر کی بجائے قرآنی پیغام کی گہرائی میں اترنے کی کوشش ہے۔ سوال صرف ایک ہے: اللہ ہم سے کیا کہنا چاہتے ہیں؟*
 
@@ -153,57 +146,18 @@ digraph divine_flow {
 
 - Present the link and translation to confirm with the user before proceeding
 
-### Step 2: YouTube Research + WebSearch
+### Step 2: Gather Research
 
-Before launching content agents, gather primary source material.
+Dispatch a research subagent to gather scholar transcripts and current events:
 
-#### YouTube Transcript Fetching
+- **Topic:** [verse/theme from Step 1]
+- **Needs:** transcripts, current-events
+- **Mode:** skill-called
+- **Minimum transcripts:** 3
 
-Search for each scholar's lectures with **message-focused** queries (not linguistic/tafseer queries):
+The research skill stores results in `research/<topic-key>/`. Transcripts in `research/<topic-key>/transcripts/`, current events in `research/<topic-key>/web/current-events.md`.
 
-```bash
-# Message-focused search queries
-yt-dlp "ytsearch5:Nouman Ali Khan [Surah/ayah] message lesson" --flat-playlist --print "%(id)s | %(title)s"
-yt-dlp "ytsearch5:Omar Suleiman [topic] quran meaning" --flat-playlist --print "%(id)s | %(title)s"
-yt-dlp "ytsearch5:Hamza Yusuf [topic] quran wisdom" --flat-playlist --print "%(id)s | %(title)s"
-yt-dlp "ytsearch5:Dr Israr Ahmed [Surah] dars quran" --flat-playlist --print "%(id)s | %(title)s"
-yt-dlp "ytsearch5:Yasir Qadhi [Surah/ayah] tafseer" --flat-playlist --print "%(id)s | %(title)s"
-yt-dlp "ytsearch5:Mufti Menk [Surah/ayah] lesson" --flat-playlist --print "%(id)s | %(title)s"
-yt-dlp "ytsearch5:Abdul Nasir Jangda [Surah/ayah] quran" --flat-playlist --print "%(id)s | %(title)s"
-```
-
-Launch all searches **in parallel**. Select the most relevant video per scholar.
-
-Fetch transcripts:
-
-```bash
-pipx run youtube-transcript-api <VIDEO_ID> 2>/dev/null | python3 -c "
-import ast, sys
-data = ast.literal_eval(sys.stdin.read())
-for entry in data[0]:
-    print(entry['text'])
-" > sessions/YYYY-MM-DD-divine-[name]/research/<scholar-name>.txt
-```
-
-Launch multiple transcript fetches **in parallel**. Verify each is non-empty and relevant.
-
-#### Current Events Research
-
-Run **broad, generic WebSearch queries** to capture the latest state of the world. Do NOT target keywords specific to the ayah — instead, cast a wide net across all major domains so the Layer 6 agent can draw its own connections. Save all results to `research/current-events.md`.
-
-Search queries (run all in parallel):
-1. `latest world news today` — top headlines across all categories
-2. `latest technology news AI 2026` — tech, AI, social media developments
-3. `latest global politics news 2026` — geopolitics, conflicts, elections, diplomacy
-4. `latest business economy news 2026` — markets, inequality, corporate power
-5. `latest Muslim world news 2026` — Muslim-majority countries, OIC, ummah affairs
-6. `latest social issues news 2026` — mental health, education, climate, human rights
-
-The goal is to give the Layer 6 agent a **snapshot of the world as it is right now**, so it can organically connect the ayah's message to current reality — rather than pre-filtering results to match expected themes.
-
-#### Research Index
-
-Create `research/index.md` listing all fetched transcripts with scholar name, video URL, and brief note.
+If research already exists and current-events is fresh (< 24 hours old), it is reused.
 
 #### Priority Scholars for Divine
 
@@ -217,19 +171,12 @@ Natural affinities:
 - **Layer 6**: Dr. Omar Suleiman, Khaled Abou El Fadl, Dr. Yasir Qadhi (current events, social justice)
 - **Layer 7**: Hamza Yusuf, Dr. Israr Ahmed (spiritual depth, philosophical contemplation)
 
-#### Important Notes
-
-- Not all scholars will have lectures on every verse — skip gracefully
-- Aim for 3-6 transcripts per session (quality over quantity)
-- Auto-generated captions may have errors — agents should interpret using their knowledge
-- If a transcript fetch fails, note it and move on
-
 ### Step 3: Dispatch Agent — Overview + Layers 1-3
 
 Write to `parts/01-overview-layers-1-3.md`
 
 **Agent prompt must include:**
-- Read all research transcripts in `research/` directory before writing
+- Read all .txt files in `research/<topic-key>/transcripts/` before writing
 - The "What Divine is NOT" constraints (copied from above)
 
 **Content:**
@@ -249,7 +196,7 @@ Scholar quotes woven into prose naturally:
 
 Write to `parts/02-layers-4-5.md`
 
-**Agent must read:** `parts/01-overview-layers-1-3.md` and `research/` transcripts
+**Agent must read:** `parts/01-overview-layers-1-3.md` and all .txt files in `research/<topic-key>/transcripts/`
 
 **Content:**
 
@@ -261,7 +208,7 @@ Write to `parts/02-layers-4-5.md`
 
 Write to `parts/03-layer-6-living-ayah.md`
 
-**Agent must read:** All previous parts AND `research/current-events.md`
+**Agent must read:** All previous parts AND `research/<topic-key>/web/current-events.md` AND `research/<topic-key>/transcripts/`
 **Agent must run:** WebSearch for latest headlines relevant to the ayah's themes
 
 **This is the LONGEST and most impactful section.**
