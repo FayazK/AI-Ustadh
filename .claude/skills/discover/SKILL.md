@@ -152,20 +152,6 @@ Each session creates a directory under `sessions/`:
 
 ```
 sessions/YYYY-MM-DD-discover-[name]/
-  research/
-    nouman-ali-khan.txt         ← YouTube transcript
-    omar-suleiman.txt           ← YouTube transcript
-    hamza-yusuf.txt             ← YouTube transcript
-    dr-israr-ahmed.txt          ← YouTube transcript
-    yasir-qadhi.txt             ← YouTube transcript
-    mufti-menk.txt              ← YouTube transcript
-    abdul-nasir-jangda.txt      ← YouTube transcript
-    furqan-qureshi.txt          ← YouTube transcript
-    mufti-tariq-masood.txt      ← YouTube transcript
-    hadith-verification.md      ← Verified hadith with grading
-    scientific-research.md      ← WebSearch results for science
-    current-events.md           ← WebSearch results for Section 6
-    index.md                    ← Research index
   parts/
     00-header.md                ← Meta: title, date, topic, scope
     01-introduction.md          ← Section 1: Introduction & Context
@@ -187,7 +173,7 @@ digraph discover_flow {
     node [shape=box];
 
     parse [label="Step 1: Parse & Identify\n(create directory + 00-header.md)"];
-    research [label="Step 2: Research Phase\n(YouTube + WebSearch + Hadith verification)"];
+    research [label="Step 2: Gather Research\n(dispatch research skill)"];
     sec1 [label="Step 3: Agent — Introduction\n(01-introduction.md)"];
     sec2 [label="Step 4: Agent — Quranic Foundation\n(02-quranic-foundation.md)"];
     sec3 [label="Step 5: Agent — Hadith & Narrations\n(03-hadith-narrations.md)"];
@@ -205,7 +191,7 @@ digraph discover_flow {
 
 - Resolve the user's input to a specific topic, scope, and related Quranic/Hadith references
 - For ambiguous inputs, present 2-3 options and confirm with user
-- Create the session directory: `sessions/YYYY-MM-DD-discover-[name]/parts/` and `sessions/YYYY-MM-DD-discover-[name]/research/`
+- Create the session directory: `sessions/YYYY-MM-DD-discover-[name]/parts/`
 - Write `parts/00-header.md`:
 
 ```markdown
@@ -215,6 +201,7 @@ digraph discover_flow {
 **نوعیت:** تحقیقی و معلوماتی — قرآن، حدیث، سائنس اور عصری مطابقت
 **موضوع:** [موضوع کی تفصیل]
 **دائرہ کار:** [قرآنی حوالے، متعلقہ احادیث، سائنسی پہلو]
+**Research:** research/<topic-key>/
 
 > *یہ تحقیق قرآن، صحیح احادیث، علمائے کرام کی آراء، جدید سائنسی تحقیق اور عصرِ حاضر کی مطابقت پر مبنی ہے۔ ہر حدیث کی تصدیق اور درجہ بندی کی گئی ہے۔*
 
@@ -223,85 +210,22 @@ digraph discover_flow {
 
 - Present the header and topic scope to confirm with the user before proceeding
 
-### Step 2: Research Phase
+### Step 2: Gather Research
 
-Three-pronged research — all launched in parallel where possible.
+Dispatch a research subagent to gather all research types:
 
-#### YouTube Transcript Fetching
+- **Topic:** [topic from Step 1]
+- **Needs:** transcripts, current-events, hadith-verification, scientific-research
+- **Mode:** skill-called
+- **Minimum transcripts:** 3
 
-Search for each scholar's lectures with **fact-focused** queries:
+The research skill stores results in `research/<topic-key>/`:
+- Transcripts: `research/<topic-key>/transcripts/`
+- Current events: `research/<topic-key>/web/current-events.md`
+- Hadith verification: `research/<topic-key>/web/hadith-verification.md`
+- Scientific research: `research/<topic-key>/web/scientific-research.md`
 
-```bash
-# Fact-focused search queries
-yt-dlp "ytsearch5:Nouman Ali Khan [topic] quran explanation" --flat-playlist --print "%(id)s | %(title)s"
-yt-dlp "ytsearch5:Omar Suleiman [topic] hadith story" --flat-playlist --print "%(id)s | %(title)s"
-yt-dlp "ytsearch5:Hamza Yusuf [topic] Islam wisdom" --flat-playlist --print "%(id)s | %(title)s"
-yt-dlp "ytsearch5:Dr Israr Ahmed [topic] dars quran" --flat-playlist --print "%(id)s | %(title)s"
-yt-dlp "ytsearch5:Yasir Qadhi [topic] tafseer explanation" --flat-playlist --print "%(id)s | %(title)s"
-yt-dlp "ytsearch5:Mufti Menk [topic] lesson" --flat-playlist --print "%(id)s | %(title)s"
-yt-dlp "ytsearch5:Abdul Nasir Jangda [topic] quran" --flat-playlist --print "%(id)s | %(title)s"
-yt-dlp "ytsearch5:Furqan Qureshi [topic] quran" --flat-playlist --print "%(id)s | %(title)s"
-yt-dlp "ytsearch5:Mufti Tariq Masood [topic] hadith" --flat-playlist --print "%(id)s | %(title)s"
-```
-
-Launch all searches **in parallel**. Select the most relevant video per scholar.
-
-Fetch transcripts:
-
-```bash
-pipx run youtube-transcript-api <VIDEO_ID> 2>/dev/null | python3 -c "
-import ast, sys
-data = ast.literal_eval(sys.stdin.read())
-for entry in data[0]:
-    print(entry['text'])
-" > sessions/YYYY-MM-DD-discover-[name]/research/<scholar-name>.txt
-```
-
-Launch multiple transcript fetches **in parallel**. Verify each is non-empty and relevant.
-
-#### Hadith Verification
-
-Run WebSearch queries to verify hadith on sunnah.com:
-
-```
-# For each hadith the topic is known to involve
-WebSearch: "site:sunnah.com [hadith keyword]"
-WebSearch: "site:islamweb.net [hadith keyword] صحة"
-```
-
-Save all verified hadith to `research/hadith-verification.md` with:
-- Arabic text or transliteration
-- Collection, book, number
-- Grading (صحیح/حسن/ضعیف/موضوع)
-- Link to sunnah.com
-
-#### Scientific Research
-
-Run WebSearch queries for scientific connections:
-
-```
-WebSearch: "[topic] scientific research study"
-WebSearch: "[topic] psychology study peer reviewed"
-WebSearch: "[topic] modern science discovery"
-```
-
-Save to `research/scientific-research.md`.
-
-#### Current Events
-
-Run WebSearch queries for contemporary relevance:
-
-```
-WebSearch: "[topic] news 2026"
-WebSearch: "[topic] modern world relevance"
-WebSearch: "[topic] technology AI 2026"
-```
-
-Save to `research/current-events.md`.
-
-#### Research Index
-
-Create `research/index.md` listing all fetched transcripts with scholar name, video URL, and brief note.
+If research already exists and all types are present (current-events < 24 hours old), it is reused.
 
 #### Priority Scholars Per Section
 
@@ -317,7 +241,7 @@ Natural affinities:
 
 Write to `parts/01-introduction.md`
 
-**Agent must read:** All research transcripts in `research/` directory
+**Agent must read:** All .txt files in `research/<topic-key>/transcripts/`
 
 **Content:**
 - 2-3 paragraphs setting the scene
@@ -332,7 +256,7 @@ Write to `parts/01-introduction.md`
 
 Write to `parts/02-quranic-foundation.md`
 
-**Agent must read:** `parts/01-introduction.md` and `research/` transcripts
+**Agent must read:** `parts/01-introduction.md` and all .txt files in `research/<topic-key>/transcripts/`
 
 **Content:**
 
@@ -355,7 +279,7 @@ Minimum 5 ayat for narrow topics, 10+ for broad topics. Every ayah linked to qur
 
 Write to `parts/03-hadith-narrations.md`
 
-**Agent must read:** Previous parts AND `research/hadith-verification.md`
+**Agent must read:** Previous parts AND `research/<topic-key>/web/hadith-verification.md` AND `research/<topic-key>/transcripts/`
 
 **This is the LONGEST and most important section for `/discover`.**
 
@@ -380,7 +304,7 @@ Every hadith MUST include grading. Unverified narrations must be flagged.
 
 Write to `parts/04-scholarly-opinions.md`
 
-**Agent must read:** Previous parts and research transcripts
+**Agent must read:** Previous parts and all .txt files in `research/<topic-key>/transcripts/`
 
 **Content:**
 
@@ -401,7 +325,7 @@ Write to `parts/04-scholarly-opinions.md`
 
 Write to `parts/05-science-research.md`
 
-**Agent must read:** Previous parts AND `research/scientific-research.md`
+**Agent must read:** Previous parts AND `research/<topic-key>/web/scientific-research.md`
 **Agent must run:** Additional WebSearch for specific scientific claims
 
 **Content:**
@@ -423,7 +347,7 @@ Write to `parts/05-science-research.md`
 
 Write to `parts/06-contemporary-relevance.md`
 
-**Agent must read:** Previous parts AND `research/current-events.md`
+**Agent must read:** Previous parts AND `research/<topic-key>/web/current-events.md`
 **Agent must run:** WebSearch for latest news relevant to the topic
 
 **Content:**
