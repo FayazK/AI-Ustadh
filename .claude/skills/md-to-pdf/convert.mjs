@@ -73,7 +73,7 @@ const htmlBody = marked.parse(mdContent);
 const css = `
 @page {
   size: A4;
-  margin: 1cm 1.5cm;
+  margin: 1cm 0.75cm;
 
   @bottom-center {
     content: counter(page);
@@ -100,26 +100,30 @@ const css = `
 
 body {
   font-family: var(--urdu-font);
-  font-size: 13pt;
-  line-height: 2.2;
+  font-size: 15.6pt;
+  line-height: 2.4;
   color: var(--text-color);
   direction: rtl;
   text-align: right;
   unicode-bidi: embed;
+  word-spacing: 0.08em;
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
 }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--urdu-font);
   color: var(--heading-color);
-  line-height: 1.8;
+  line-height: 2.0;
   margin-top: 1.5em;
   margin-bottom: 0.5em;
   page-break-after: avoid;
 }
 
 h1 {
-  font-size: 22pt;
+  font-size: 26.4pt;
   text-align: center;
   border-bottom: 3px solid var(--border-color);
   padding-bottom: 0.4em;
@@ -127,18 +131,18 @@ h1 {
 }
 
 h2 {
-  font-size: 18pt;
+  font-size: 21.6pt;
   border-bottom: 1.5px solid var(--border-color);
   padding-bottom: 0.3em;
 }
 
 h3 {
-  font-size: 15pt;
+  font-size: 18pt;
   color: #2d5a3d;
 }
 
 h4, h5, h6 {
-  font-size: 13pt;
+  font-size: 15.6pt;
 }
 
 /* Paragraphs */
@@ -163,8 +167,8 @@ ul, ol {
 }
 
 li {
-  margin-bottom: 0.3em;
-  line-height: 2;
+  margin-bottom: 0.4em;
+  line-height: 2.3;
 }
 
 /* Tables */
@@ -172,8 +176,8 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin: 1em 0;
-  font-size: 9pt;
-  line-height: 1.6;
+  font-size: 11pt;
+  line-height: 1.8;
   table-layout: fixed;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -218,7 +222,7 @@ blockquote p {
 /* Code */
 code {
   font-family: var(--mono-font);
-  font-size: 10pt;
+  font-size: 12pt;
   background-color: #f0ede8;
   padding: 2px 5px;
   border-radius: 3px;
@@ -233,7 +237,7 @@ pre {
   overflow-x: auto;
   direction: ltr;
   text-align: left;
-  font-size: 10pt;
+  font-size: 12pt;
   line-height: 1.5;
   page-break-inside: avoid;
   margin: 1em 0;

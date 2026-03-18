@@ -245,6 +245,14 @@ You are particularly strong in contemporary application, philosophical depth, an
 - **Must read** `parts/03-ali-stages-7-9.md` and previous Omar parts
 - Same stages, Omar's perspective, engaging with Ali
 - Include insights from Dr. Omar Suleiman, Nouman Ali Khan, Hamza Yusuf, Khaled Abou El Fadl, and Western academic scholars (Neuwirth, Sinai, Ernst) on contemporary application, ethics, and structural analysis
+- **Stage 8 — "Today's World" is Omar's strongest section and must be given maximum depth.** Omar must:
+  1. **Use WebSearch** to find current news headlines, ongoing conflicts, and political developments relevant to the ayah's themes
+  2. Connect the ayah to **active conflicts and crises** in the Muslim world (Palestine, Sudan, Kashmir, Uyghurs, Rohingya, Syria, Yemen, etc.) — what does it say to the oppressor, the oppressed, and the silent bystander?
+  3. Address **geopolitics and world order** — superpowers, alliances, sanctions, international law failures, propaganda, media manipulation
+  4. Connect to **Muslim ummah's internal state** — divisions, governance failures, nationalism vs. ummah consciousness, authoritarianism
+  5. Address **technology and modern life** — AI, social media, surveillance capitalism, wealth inequality, modern riba, climate crisis
+  6. Pose the question: "If this ayah were revealed today, who would it be addressing? What situation would trigger it?"
+  7. Challenge both liberal and conservative Muslim positions — what uncomfortable truths does this ayah hold for Muslims themselves?
 
 #### Agent 3d: Omar Dialogue → `parts/08-omar-dialogue.md`
 - **Must read** `parts/04-ali-questions.md` and all Omar parts

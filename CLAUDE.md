@@ -7,11 +7,15 @@ This project provides deep, multi-layered Quranic verse exploration through AI-a
 ## Commands
 
 - `/recite [verse-reference]` — Launch a dual-scholar exploration of a Quranic verse. Accepts ayah numbers (e.g., `2:255`), ranges (`2:255-257`), names (`Ayat al-Kursi`), or topics.
+- `/divine [verse-reference or theme]` — Deep conceptual exploration of a Quranic verse or theme, focused on Allah's message through 7 layers of understanding, compiled into a PDF.
+- `/discover [topic]` — Encyclopedic exploration of any Quranic verse, hadith, Islamic concept, or theme. Packed with verified hadith, companion narrations, scholarly opinions, scientific connections, and contemporary relevance — compiled into a PDF.
 
 ## Skills
 
 - `quran-explorer` — Framework for deeply analyzing Quranic verses across 9 stages (linguistics, context, tafseer, hadith, rhetoric, science, application, reflection)
 - `recite` — Orchestrates two scholar personas (Ali and Omar) exploring a verse together, writing partial files per stage group, then compiling into a final PDF
+- `divine` — Layered conceptual exploration of Quranic verses/themes focused on the divine message (no linguistics or tafseer methodology), with contemporary application
+- `discover` — Encyclopedic Islamic knowledge explorer: verified hadith, companion stories, scholarly opinions (classical + contemporary), scientific connections, and modern relevance
 - `md-to-pdf` — Converts markdown files to clean RTL PDFs with Nastaleeq font support
 
 ## Directory Structure
@@ -38,6 +42,8 @@ The project draws on a broad, multi-disciplinary range of scholars and researche
 - **Hamza Yusuf** — Classical Islamic thought, philosophy, Western intellectual tradition
 - **Mufti Menk** — Accessible tafseer and general Islamic guidance
 - **Ustadha Taimiyyah Zubair** — Word-for-word linguistic breakdowns, root word analysis (Al Huda, Bayyinah, Yaqeen)
+- **Furqan Qureshi** — Encyclopedic Urdu Islamic content; scientific connections, wonder-building narrations, hadith stories
+- **Mufti Tariq Masood** — Urdu; hadith-heavy lectures, detailed narrator chain discussions, practical Islamic guidance
 
 ### Translation & Accessibility
 - **Dr. Mustafa Khattab** — *The Clear Quran*; modern English that captures nuance, emotion, and historical context

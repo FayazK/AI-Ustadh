@@ -163,13 +163,40 @@ Examine how this ayah's guidance applies across time:
 1. **7th Century Arabia** — immediate application for the first community
 2. **Classical Islamic Civilization** — how scholars and societies applied it (Abbasid, Andalusian, Ottoman periods)
 3. **Colonial/Modern Period** — relevance during upheaval and reform movements
-4. **Today** — application to:
-   - Current global events and geopolitics
-   - Technology, AI, social media
-   - Economic systems
-   - Environmental challenges
-   - Social justice and human rights
-   - Mental health and spiritual wellness
+4. **Today's World — آج کی دنیا میں** (this is the most critical sub-stage — give it significant depth)
+
+   **Use WebSearch to find current news and events relevant to the ayah's themes before writing this section.** Search for headlines, ongoing conflicts, political developments, and social trends that the ayah speaks to directly or thematically.
+
+   #### Geopolitics, Conflicts & the Muslim Ummah
+   - How does this ayah address the current state of the Muslim world — its divisions, struggles, and aspirations?
+   - Connect to **active conflicts** (Palestine, Sudan, Kashmir, Uyghurs, Rohingya, Syria, Yemen, etc.) — what does this ayah say to oppressors, to the oppressed, to bystanders?
+   - How does it speak to the **refugee and displacement crises** affecting millions of Muslims?
+   - What does it say about **Muslim-majority nations' governance** — authoritarianism, corruption, resource exploitation?
+   - How does it relate to **Western foreign policy**, interventionism, and the post-colonial Muslim world?
+   - Connect to **rising Islamophobia**, surveillance, and the "War on Terror" legacy
+
+   #### Power, Politics & World Order
+   - What does this ayah reveal about **power structures** — superpowers, alliances, economic hegemony (IMF, World Bank, sanctions regimes)?
+   - How does it address **justice vs. international law** — when institutions fail the oppressed?
+   - Connect to **nationalism vs. ummah consciousness** — the tension between nation-states and Islamic solidarity
+   - What does the ayah say about **propaganda, media manipulation**, and controlling narratives?
+
+   #### Technology, Economy & Modern Life
+   - AI, social media addiction, algorithmic manipulation, surveillance capitalism
+   - Wealth inequality, interest-based economies, crypto, modern riba
+   - Climate crisis and environmental stewardship (khalifah responsibility)
+   - Mental health epidemic — anxiety, depression, spiritual emptiness in material abundance
+
+   #### Social Justice & Ethics
+   - Gender justice, racial justice, class struggle — what does this ayah demand?
+   - Immigration, borders, and human dignity
+   - Freedom of speech vs. sacred boundaries
+   - How contemporary Muslim scholars and activists are applying this ayah's principles today
+
+   #### The Ayah as Mirror
+   - If this ayah were revealed today, who would it be addressing? What situation would trigger it?
+   - What uncomfortable truths does it hold for Muslims themselves — not just "the other"?
+   - How does it challenge both liberal and conservative Muslim positions?
 
 #### Contemporary Ethics and Reformist Perspectives
 
@@ -179,7 +206,7 @@ When relevant, engage with scholars who focus on ethics, justice, and re-evaluat
 - **Amina Wadud** & **Asma Barlas** — Islamic feminist hermeneutics; egalitarian readings of the Arabic text; examining whether patriarchal interpretations stem from the text or human bias
 - **Dr. Omar Suleiman** — Social justice, spirituality, and contemporary ethical application
 
-**Deep Questions:** Does the ayah's relevance shift across eras or remain constant? What new dimensions emerge in the modern context that earlier scholars could not have anticipated?
+**Deep Questions:** Does the ayah's relevance shift across eras or remain constant? What new dimensions emerge in the modern context that earlier scholars could not have anticipated? If you could place this ayah on a billboard in Times Square, the UN General Assembly, or a refugee camp — what would it say to each audience?
 
 ### Stage 9: Personal and Communal Reflection
 
