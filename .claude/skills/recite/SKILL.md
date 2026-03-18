@@ -47,7 +47,7 @@ digraph recite_flow {
     node [shape=box];
 
     parse [label="Step 1: Parse & Identify\n(create directory + 00-header.md)"];
-    research [label="Step 1.5: YouTube Research\n(fetch transcripts → research/)"];
+    research [label="Step 1.5: Gather Research\n(dispatch research skill)"];
     ali1 [label="Step 2a: Ali Stages 1-3\n(01-ali-stages-1-3.md)"];
     ali2 [label="Step 2b: Ali Stages 4-6\n(02-ali-stages-4-6.md)"];
     ali3 [label="Step 2c: Ali Stages 7-9\n(03-ali-stages-7-9.md)"];
@@ -79,91 +79,28 @@ digraph recite_flow {
 **علماء:** علی (لسانیات اور کلاسیکی تفسیر) اور عمر (فلسفہ اور عصری اطلاق)
 **آیت:** [quran.com link]
 **ترجمہ:** [Urdu translation]
+**Research:** research/<topic-key>/
 
 ---
 ```
 
 - Present the link and translation to confirm with the user before proceeding
 
-### Step 1.5: YouTube Research — Contemporary Scholar Transcripts
+### Step 1.5: Gather Research
 
-Before launching the scholar agents, gather primary source material from contemporary scholars' YouTube lectures on the verse. This step creates a `research/` directory inside the session with transcript files that both scholars will reference.
+Dispatch a research subagent to gather scholar transcripts:
 
-#### Directory Structure
+- **Topic:** [surah-name ayah-range from Step 1]
+- **Needs:** transcripts
+- **Mode:** skill-called
+- **Minimum transcripts:** 3
 
-```
-sessions/YYYY-MM-DD-surah-name-ayah/
-  research/
-    nouman-ali-khan-1.txt    ← Transcript of NAK lecture
-    nouman-ali-khan-2.txt    ← Another NAK lecture (if found)
-    yasir-qadhi.txt          ← Transcript of Yasir Qadhi lecture
-    omar-suleiman.txt        ← Transcript of Omar Suleiman lecture
-    hamza-yusuf.txt          ← Transcript of Hamza Yusuf lecture
-    mufti-menk.txt           ← Transcript of Mufti Menk lecture
-    dr-israr-ahmed.txt       ← Transcript of Dr. Israr Ahmed lecture (Urdu)
-    abdul-nasir-jangda.txt   ← Transcript of Shaykh Abdul Nasir Jangda lecture
-    taimiyyah-zubair.txt     ← Transcript of Ustadha Taimiyyah Zubair lecture
-    mustafa-khattab.txt      ← Transcript of Dr. Mustafa Khattab lecture
-    ...
-```
+The research skill stores results in `research/<topic-key>/transcripts/`. All subsequent scholar agents read from this shared location.
 
-#### Process
+If research already exists for this topic (from a previous session), it is reused — no duplicate fetching.
 
-1. **Search YouTube directly** using `yt-dlp` for each contemporary scholar's lectures on the verse:
-
-```bash
-# Search for up to 5 results per scholar
-yt-dlp "ytsearch5:Nouman Ali Khan [Surah Name] [ayah] [topic]" --flat-playlist --print "%(id)s | %(title)s"
-yt-dlp "ytsearch5:Yasir Qadhi [Surah Name] [verse topic] tafseer" --flat-playlist --print "%(id)s | %(title)s"
-yt-dlp "ytsearch5:Omar Suleiman [verse reference] [topic]" --flat-playlist --print "%(id)s | %(title)s"
-yt-dlp "ytsearch5:Hamza Yusuf [verse topic] quran" --flat-playlist --print "%(id)s | %(title)s"
-yt-dlp "ytsearch5:Mufti Menk [Surah Name] tafseer" --flat-playlist --print "%(id)s | %(title)s"
-yt-dlp "ytsearch5:Dr Israr Ahmed [Surah Name] [ayah] dars quran" --flat-playlist --print "%(id)s | %(title)s"
-yt-dlp "ytsearch5:Abdul Nasir Jangda [Surah Name] [verse topic] tafseer" --flat-playlist --print "%(id)s | %(title)s"
-yt-dlp "ytsearch5:Taimiyyah Zubair [Surah Name] [ayah] quran" --flat-playlist --print "%(id)s | %(title)s"
-yt-dlp "ytsearch5:Mustafa Khattab [Surah Name] clear quran" --flat-playlist --print "%(id)s | %(title)s"
-```
-
-Launch all searches **in parallel** for speed. Select the most relevant video IDs from the results.
-
-2. **Fetch transcripts** using `youtube-transcript-api` via `pipx`:
-
-```bash
-pipx run youtube-transcript-api <VIDEO_ID> 2>/dev/null | python3 -c "
-import ast, sys
-data = ast.literal_eval(sys.stdin.read())
-for entry in data[0]:
-    print(entry['text'])
-" > sessions/YYYY-MM-DD-surah-name-ayah/research/<scholar-name>.txt
-```
-
-Launch multiple transcript fetches **in parallel** for different video IDs.
-
-3. **Verify each transcript** is non-empty and relevant (read the first 20-30 lines to confirm it's about the right verse). Discard irrelevant results.
-
-4. **Create a research index** file `research/index.md` listing all fetched transcripts with:
-   - Scholar name
-   - Video title
-   - YouTube URL (`https://www.youtube.com/watch?v=<ID>`)
-   - Transcript file path
-   - Brief note on what the lecture covers
-
-#### Important Notes
-
-- Launch multiple WebSearch queries **in parallel** to find videos faster
-- Not all scholars will have lectures on every verse — skip gracefully if nothing found
-- Auto-generated captions may have transliteration errors for Arabic terms — scholars should use their knowledge to interpret correctly
-- Aim for 3-6 transcripts per session (quality over quantity)
-- If a transcript fetch fails (no captions available), note it and move on
-
-#### How Scholars Use the Research
-
-Both Ali and Omar agents **must read** the relevant research transcripts before writing their stages. The agent prompts should include:
-
-```
-**IMPORTANT: Read the contemporary scholar research files in the research/ directory before writing.
+**IMPORTANT: All Ali and Omar agents must read all .txt files in research/<topic-key>/transcripts/ before writing.
 Integrate insights from these primary sources into your analysis, citing the scholar and lecture title.**
-```
 
 ### Step 2: Launch Scholar Ali (Staged Exploration)
 
@@ -185,7 +122,7 @@ You are particularly strong in root word analysis and nazm (structural coherence
 **All output must be in scholarly Urdu.** Keep Arabic Islamic terms, transliterations, scholar names, book titles, and URLs in original form. Do not embed Arabic ayah text — link to quran.com instead.
 
 #### Agent 2a: Ali Stages 1-3 → `parts/01-ali-stages-1-3.md`
-- **Must read** all transcript files in the `research/` directory for contemporary scholar insights
+- **Must read** all .txt files in `research/<topic-key>/transcripts/` (path provided by research skill) for contemporary scholar insights
 - Stage 1: Identification and Arabic Text (translations comparison)
 - Stage 2: Root Word Analysis (linguistic microscope) — integrate Nouman Ali Khan's root word breakdowns from his transcript
 - Stage 3: Context (micro, macro, shan-e-nazool)
@@ -193,7 +130,7 @@ You are particularly strong in root word analysis and nazm (structural coherence
 - Use WebSearch to verify references and find additional contemporary scholar insights
 
 #### Agent 2b: Ali Stages 4-6 → `parts/02-ali-stages-4-6.md`
-- **Must read** `parts/01-ali-stages-1-3.md` and `research/` transcripts for continuity
+- **Must read** `parts/01-ali-stages-1-3.md` and all .txt files in `research/<topic-key>/transcripts/` for continuity
 - Stage 4: Classical Tafseer (9 major tafaseers)
 - Stage 5: Hadith Correlation
 - Stage 6: Rhetorical and Literary Analysis (balagha)
@@ -232,7 +169,7 @@ You are particularly strong in contemporary application, philosophical depth, an
 **All output must be in scholarly Urdu.** Same language rules as Ali.
 
 #### Agent 3a: Omar Stages 1-3 → `parts/05-omar-stages-1-3.md`
-- **Must read** `parts/01-ali-stages-1-3.md` and `research/` transcripts
+- **Must read** `parts/01-ali-stages-1-3.md` and all .txt files in `research/<topic-key>/transcripts/`
 - Same stages as Ali but from Omar's perspective
 - Engage with Ali's analysis — agree or respectfully challenge
 - Integrate insights from Dr. Omar Suleiman, Hamza Yusuf, Dr. Israr Ahmed, Dr. Mustafa Khattab, and other contemporary scholars found in research transcripts
