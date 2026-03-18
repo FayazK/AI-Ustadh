@@ -17,6 +17,15 @@ A rigorous, multi-layered exploration framework for Quranic verses. Each verse i
 
 ## Exploration Framework
 
+### Step 0 (Optional): Check for Existing Research
+
+Before beginning the exploration, check if shared research exists for this verse:
+
+- If `research/<topic-key>/transcripts/` exists, read the transcripts for richer analysis across all stages
+- If not, proceed without — quran-explorer is designed to work standalone with WebSearch
+
+This step is optional. Quran-explorer does not dispatch the research skill — it only benefits from research that already exists from previous `/research`, `/recite`, `/divine`, or `/discover` sessions.
+
 Follow these stages sequentially. At the end of each stage, pose 2-3 critical deep questions that bridge to the next stage.
 
 ### Stage 1: Identification and Arabic Text
