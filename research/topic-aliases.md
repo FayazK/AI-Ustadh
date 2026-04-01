@@ -19,3 +19,15 @@ Maps known aliases to canonical topic keys. Updated automatically by the researc
 | night of power | laylatul-qadr |
 | surah al-qadr | laylatul-qadr |
 | 97:1-5 | laylatul-qadr |
+| sabr-wa-shukr | sabr-wa-shukr |
+| sabar and shukar | sabr-wa-shukr |
+| sabr and shukr | sabr-wa-shukr |
+| patience and gratitude | sabr-wa-shukr |
+| sabr | sabr-wa-shukr |
+| shukr | sabr-wa-shukr |
+| olive-oil | olive-oil |
+| olive oil | olive-oil |
+| zaitoon | olive-oil |
+| zaitun | olive-oil |
+| olives in quran | olive-oil |
+| blessed tree olive | olive-oil |
