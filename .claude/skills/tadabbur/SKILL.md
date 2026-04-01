@@ -58,6 +58,7 @@ For ambiguous or overly broad inputs, identify 2-3 possible angles and confirm w
 Each part answers a question. Each answer raises the next question.
 
 ### Part 01: سیاق و سباق — Context
+**10-15% of total output**
 **Question: What is this about and why does it matter?**
 
 Set the scene. When was this revealed? What was happening? What problem does it address? Not a dry historical summary — frame it as "imagine you're standing there when this was revealed..." or "imagine you're hearing this for the first time..."
@@ -84,6 +85,7 @@ Root analysis appears here naturally: "The word عصر comes from عَصَرَ �
 This section spirals freely — no fixed subsections. Follow the thread wherever it leads. Each answer must raise a new question.
 
 ### Part 03: روابط — Connections
+**15-20% of total output**
 **Question: How does this connect to what came before, after, and across the Quran?**
 
 Zoom out. Trace threads across the Quran:
@@ -99,6 +101,7 @@ This is where Quranic internal coherence (nazm) gets investigated — not as aca
 Reference 5-10 other passages minimum. Link every ayah to quran.com.
 
 ### Part 04: گہرائی — Depths
+**15-20% of total output**
 **Question: What's hidden beneath the surface?**
 
 This is where disagreements become fuel:
@@ -112,6 +115,7 @@ This is where disagreements become fuel:
 This section should feel like the lecturer pausing mid-lecture and saying: "Now here's where it gets really interesting..."
 
 ### Part 05: زندہ پیغام — Living Message
+**10-15% of total output**
 **Question: What does this demand from us today?**
 
 Brief but pointed. Not heavy political analysis — instead, a focused "so what does this mean for you, standing here today?"
@@ -173,8 +177,9 @@ digraph tadabbur_flow {
     living [label="Step 7: Agent — Living Message\n(05-living-message.md)"];
     refs [label="Step 8: References\n(06-references.md)"];
     compile [label="Step 9: Compile & PDF\n(session.md → session.pdf)"];
+    summary [label="Step 10: Present Summary\n(central question, discovery, paths)"];
 
-    parse -> research -> context -> investigation -> connections -> depths -> living -> refs -> compile;
+    parse -> research -> context -> investigation -> connections -> depths -> living -> refs -> compile -> summary;
 }
 ```
 
@@ -239,7 +244,7 @@ Write to `parts/01-context.md`
 - The full "What Tadabbur is NOT" section (copied from above)
 - The Part 01 description
 
-**Content:** 3-5 paragraphs setting the scene. End with a transition into the investigation.
+**Content:** 3-5 paragraphs setting the scene. End with a transition into the investigation. This section should be 10-15% of total output — 3-5 paragraphs.
 
 ### Step 4: Dispatch Agent — Investigation
 
@@ -265,7 +270,7 @@ Write to `parts/03-connections.md`
 - The full "Lecturer's Voice" section
 - The full "What Tadabbur is NOT" section
 - The Part 03 description
-- Explicit instruction: "Reference 5-10 other Quranic passages minimum. Link every ayah to quran.com. Use WebSearch to verify cross-references."
+- Explicit instruction: "Reference 5-10 other Quranic passages minimum. Link every ayah to quran.com. Use WebSearch to verify cross-references. This section should be 15-20% of total output."
 
 ### Step 6: Dispatch Agent — Depths
 
@@ -277,7 +282,7 @@ Write to `parts/04-depths.md`
 - The full "Lecturer's Voice" section
 - The full "What Tadabbur is NOT" section
 - The Part 04 description
-- Explicit instruction: "Disagreements are fuel for deeper questions, not a bibliography. Present them as discoveries: 'There are two readings here, and the gap between them reveals...'"
+- Explicit instruction: "Disagreements are fuel for deeper questions, not a bibliography. Present them as discoveries: 'There are two readings here, and the gap between them reveals...' This section should be 15-20% of total output."
 
 ### Step 7: Dispatch Agent — Living Message
 
@@ -289,7 +294,7 @@ Write to `parts/05-living-message.md`
 - The full "Lecturer's Voice" section
 - The full "What Tadabbur is NOT" section
 - The Part 05 description
-- Explicit instruction: "Brief but pointed. End with 2-3 piercing personal questions for the reader."
+- Explicit instruction: "Brief but pointed. End with 2-3 piercing personal questions for the reader. This section should be 10-15% of total output — brief but pointed."
 
 ### Step 8: References
 
