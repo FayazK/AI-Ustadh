@@ -1,49 +1,10 @@
 # AI Ustadh
 
-AI-powered deep Quranic exploration through Claude Code skills. Four distinct modes — `/recite`, `/divine`, `/discover`, and `/research` — each approach the Quran from a different angle, backed by YouTube scholar transcripts, hadith verification, and scientific research.
+AI-powered deep Quranic exploration through Claude Code skills. Distinct modes — `/divine`, `/discover`, `/tadabbur`, and `/research` — each approach the Quran from a different angle, backed by YouTube scholar transcripts, hadith verification, and scientific research.
 
 All output is in Urdu, compiled into beautifully formatted RTL PDFs with Nastaleeq typography.
 
 ## Skills
-
-### `/recite [verse]` — Dual-Scholar Dialogue
-
-Two AI scholars — **Ali** (classical linguistics and tafseer) and **Omar** (philosophy and contemporary application) — conduct a structured 9-stage analysis of any Quranic ayah, then engage in scholarly dialogue.
-
-```
-/recite 24:35
-/recite 2:255-257
-/recite Ayat al-Kursi
-```
-
-**What it produces:**
-
-1. Fetches YouTube research from 11+ scholars
-2. Scholar Ali explores 9 stages: verse identification, root words, context, classical tafseer (9+ tafaseers), hadith correlation, balagha, scientific lens, application, reflection — then poses 5 questions
-3. Scholar Omar explores the same 9 stages from a philosophical perspective, answers Ali's questions, poses counter-questions, raises unresolved questions
-4. Synthesizes agreements, disagreements, and key insights
-5. Compiles into a single markdown and formatted PDF
-
-**Output structure:**
-```
-sessions/2026-03-11-an-noor-35/
-  parts/
-    00-header.md              # Title, date, translation
-    01-ali-stages-1-3.md      # Ali: Identification, Root Words, Context
-    02-ali-stages-4-6.md      # Ali: Tafseer, Hadith, Balagha
-    03-ali-stages-7-9.md      # Ali: Science, Application, Reflection
-    04-ali-questions.md       # Ali: 5 questions for Omar
-    05-omar-stages-1-3.md     # Omar: Identification, Root Words, Context
-    06-omar-stages-4-6.md     # Omar: Tafseer, Hadith, Balagha
-    07-omar-stages-7-9.md     # Omar: Science, Application, Reflection
-    08-omar-dialogue.md       # Omar: Responses, counter-questions, unresolved
-    09-synthesis.md           # Agreements, disagreements, key insights
-    10-references.md          # All references compiled
-  session.md                  # All parts compiled
-  session.pdf                 # Final formatted PDF (RTL, Nastaleeq)
-```
-
----
 
 ### `/divine [verse or theme]` — Layered Meaning Exploration
 
@@ -178,7 +139,7 @@ Research is deduplicated — if a topic already has research, other skills reuse
 
 ### `quran-explorer` (internal)
 
-Framework for deeply analyzing Quranic verses across 9 stages (linguistics, context, tafseer, hadith, rhetoric, science, application, reflection). Used internally by `/recite` — not invoked directly.
+Framework for deeply analyzing Quranic verses across 9 stages (linguistics, context, tafseer, hadith, rhetoric, science, application, reflection). Reference framework — not invoked directly.
 
 ### `md-to-pdf` (internal)
 
@@ -232,7 +193,6 @@ You'll also need a Nastaleeq font — see [INSTALL.md](INSTALL.md) for options.
 Open Claude Code in the project directory and run any skill:
 
 ```
-/recite 24:35              # dual-scholar verse exploration
 /divine 97:1-5             # layered meaning exploration
 /discover Laylatul Qadr    # encyclopedic topic exploration
 /tadabbur Surah Al-Asr     # deep investigative exploration
@@ -242,8 +202,8 @@ Open Claude Code in the project directory and run any skill:
 All input formats work across skills:
 
 ```
-/recite 2:255              # by surah:ayah number
-/recite 2:255-257          # ayah range
+/divine 2:255              # by surah:ayah number
+/divine 2:255-257          # ayah range
 /divine Ayat al-Kursi      # by name
 /discover sabr and shukr   # by topic/concept
 /tadabbur wahi to the bee  # by topic/concept
