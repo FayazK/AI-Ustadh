@@ -73,28 +73,53 @@ Establish the central question that the rest of the lecture will answer. This is
 
 **THIS IS THE HEART OF TADABBUR. It must be 40-50% of the total output.**
 
-This is where the relentless questioning lives. The lecturer picks apart word choices, placement, structure, order — whatever the topic demands:
+**CRITICAL RULE: Go DEEP into the specific ayah/topic FIRST. Do NOT branch to other surahs or cross-references here — that belongs in Part 03 (Connections). This section exhausts the depth of THIS text before going anywhere else.**
 
-- For an ayah: Why did Allah use this word and not its synonym? Why this verb form? Why this word order? Why an oath here? Why plural not singular? Each answer opens a new "why?"
+The investigation has three mandatory layers, explored in order:
+
+#### Layer 1: Backstory & Scientific Reality (WHY this detail?)
+Before analyzing any word, FIRST investigate the real-world backstory behind every specific detail the Quran mentions. Use WebSearch to verify scientific facts. Examples:
+- **Creature mentioned?** What is the scientific reality of this creature? (e.g., ant colonies are ALWAYS led by females — every worker ant is female. The Quran using feminine قَالَتْ نَمْلَةٌ is not poetic license — it is scientifically precise. How did a 7th-century text know this?)
+- **Person/character?** What is their full backstory? What happened before this scene? What shaped them?
+- **Object or phenomenon?** What does modern science tell us about it? How does that illuminate the Quran's word choice?
+- **Practice or concept?** What was the pre-Islamic understanding? How did the Quran transform it?
+
+This layer asks: "What is the REALITY behind what the Quran describes, and does that reality reveal something the casual reader misses?"
+
+#### Layer 2: Word-by-Word Deep Dive (WHY this word, not another?)
+Now pick apart the specific text — word choices, verb forms, grammatical gender, word order, sentence structure:
+- For an ayah: Why did Allah use this word and not its synonym? Why this verb form? Why this word order? Why an oath here? Why plural not singular? Why this grammatical gender? Each answer opens a new "why?"
 - For a story: Why this creature/person? Why this specific dialogue? Why does the narrator pause here? Why is this detail included but that one omitted?
-- For a concept: Why is it framed this way in the Quran? Why does it appear in these specific contexts? Why paired with these other concepts?
+- For a concept: Why is it framed this way? Why paired with these other concepts?
 - For an event: Why does the Quran tell it from this angle? Why these details? Why this sequence?
 
 Root analysis appears here naturally: "The word عصر comes from عَصَرَ — to squeeze, to press. Time is being squeezed. Not زمان which just means time passing — عصر is time running out, time under pressure. And that one word changes the entire surah because..."
 
-This section spirals freely — no fixed subsections. Follow the thread wherever it leads. Each answer must raise a new question.
+#### Layer 3: Intra-Surah Thematic Patterns (WHY placed HERE in THIS surah?)
+Before leaving the surah, investigate deliberate thematic pairings and patterns WITHIN the same surah:
+- What patterns connect this passage to other passages in the SAME surah?
+- Are there deliberate character/theme pairings? (e.g., in Surah An-Naml: the ant is a female leader, the Queen of Sheba is a female leader — both in the same surah named "The Ant." This is not coincidence. Why did Allah pair these two female leaders? What does each reveal about the other?)
+- How does this passage serve the surah's overall argument?
+- What would be LOST if this passage were removed from its surah?
+
+This layer asks: "Why is this HERE and not somewhere else in the Quran?"
+
+---
+
+**The section spirals freely within these layers — no rigid order required, but ALL three layers must be covered.** Follow the thread wherever it leads. Each answer must raise a new question. Do NOT reference other surahs here — save that for Connections.
 
 ### Part 03: روابط — Connections
 **15-20% of total output**
-**Question: How does this connect to what came before, after, and across the Quran?**
+**Question: How does this connect across the Quran?**
 
-Zoom out. Trace threads across the Quran:
+**This is where cross-surah references belong — NOT in the Investigation.** The Investigation went deep into the specific text; now zoom out and trace threads across the entire Quran:
 
-- How does this connect to the surrounding verses or the surah's overall structure?
-- Where else does this theme, word, or pattern appear in the Quran?
+- Where else does this theme, word, character, or pattern appear in OTHER surahs?
 - "This same word appears in Surah X, but there it means something subtly different — and that difference tells us..."
 - How does the Quran build this argument cumulatively across multiple surahs?
 - Related hadith that illuminate the connections
+- Character arcs across surahs (e.g., Sulaiman in An-Naml vs. Sad vs. Al-Baqarah vs. Al-Anbiya)
+- Thematic parallels with other Quranic stories (power, humility, gratitude)
 
 This is where Quranic internal coherence (nazm) gets investigated — not as academic terminology, but as the lecturer tracing a thread and showing the listener: "Look — this isn't random. This is a deliberate pattern."
 
@@ -255,10 +280,13 @@ Write to `parts/02-investigation.md`
 **Agent prompt must include:**
 - The full "Lecturer's Voice" section
 - The full "What Tadabbur is NOT" section
-- The Part 02 description
-- Explicit instruction: "This is the HEART of the lecture. It must be 40-50% of the total output. Every answer must raise a new question. Spiral freely — follow the thread wherever it leads."
+- The full Part 02 description (INCLUDING all three layers: Backstory & Scientific Reality, Word-by-Word Deep Dive, Intra-Surah Thematic Patterns)
+- Explicit instruction: "This is the HEART of the lecture. It must be 40-50% of the total output. Every answer must raise a new question."
+- Explicit instruction: "CRITICAL: Go DEEP into the specific ayah/topic. Do NOT branch to other surahs — that belongs in the Connections section. Exhaust the depth of THIS text first."
+- Explicit instruction: "You MUST cover all three investigation layers: (1) Backstory & scientific reality — use WebSearch to verify scientific facts about creatures, phenomena, or concepts mentioned. (2) Word-by-word deep dive — every word choice, verb form, grammatical gender. (3) Intra-surah thematic patterns — deliberate pairings and placement within THIS surah."
+- Topic-specific investigation threads identified by the orchestrator (e.g., for Solomon and the ant: "Why is the ant feminine? Science confirms all worker ants are female — investigate this. Why are both female leaders (ant + Queen of Sheba) in the same surah?")
 
-**This is the longest and most important section.** The agent should be given maximum context from research.
+**This is the longest and most important section.** The agent should be given maximum context from research AND explicit investigation threads to pursue.
 
 ### Step 5: Dispatch Agent — Connections
 

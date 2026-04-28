@@ -31,3 +31,9 @@ Maps known aliases to canonical topic keys. Updated automatically by the researc
 | zaitun | olive-oil |
 | olives in quran | olive-oil |
 | blessed tree olive | olive-oil |
+| an-naml-17-19 | an-naml-17-19 |
+| sulaiman ant | an-naml-17-19 |
+| solomon ant | an-naml-17-19 |
+| 27:17-19 | an-naml-17-19 |
+| valley of ants | an-naml-17-19 |
+| surah naml ant story | an-naml-17-19 |
