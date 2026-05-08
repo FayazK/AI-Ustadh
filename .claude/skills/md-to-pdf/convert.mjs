@@ -302,9 +302,20 @@ ${htmlBody}
 const tmpHtml = join(tmpdir(), `md2pdf-${Date.now()}.html`);
 writeFileSync(tmpHtml, fullHtml, "utf-8");
 
-// Convert with weasyprint
+// Convert with weasyprint.
+// On macOS, SIP strips DYLD_* vars when execSync spawns a shell, so we
+// prepend `env DYLD_FALLBACK_LIBRARY_PATH=...` to set the path explicitly
+// for weasyprint's libgobject/libpango lookup via Homebrew.
+const dyldPath =
+  process.platform === "darwin"
+    ? "/opt/homebrew/lib:/usr/local/lib"
+    : "";
+const cmd =
+  process.platform === "darwin"
+    ? `env DYLD_FALLBACK_LIBRARY_PATH="${dyldPath}" weasyprint "${tmpHtml}" "${outputPath}"`
+    : `weasyprint "${tmpHtml}" "${outputPath}"`;
 try {
-  execSync(`weasyprint "${tmpHtml}" "${outputPath}"`, {
+  execSync(cmd, {
     stdio: "inherit",
     timeout: 120000,
   });

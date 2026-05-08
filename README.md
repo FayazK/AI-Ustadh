@@ -1,6 +1,6 @@
 # AI Ustadh
 
-AI-powered deep Quranic exploration through Claude Code skills. Distinct modes — `/divine`, `/discover`, `/tadabbur`, and `/research` — each approach the Quran from a different angle, backed by YouTube scholar transcripts, hadith verification, and scientific research.
+AI-powered deep Quranic exploration through Claude Code skills. Distinct modes — `/divine`, `/discover`, `/tadabbur`, `/recite`, and `/research` — each approach the Quran from a different angle, backed by YouTube scholar transcripts, hadith verification, and scientific research.
 
 All output is in Urdu, compiled into beautifully formatted RTL PDFs with Nastaleeq typography.
 
@@ -104,6 +104,43 @@ sessions/2026-04-01-tadabbur-surah-al-asr/
   session.md
   session.pdf
 ```
+
+---
+
+### `/recite [ayah, range, or passage]` — Structured Ayah-by-Ayah Study Guide
+
+Textbook-style Urdu study companion. Every ayah in the passage gets the **same fixed template**: Arabic from quran.com, word-by-word Urdu translation, smooth Urdu translation (Mufti Taqi Usmani — *آسان ترجمۂ قرآن*), root word analysis, a unified tafseer paragraph synthesizing classical and contemporary scholarship, and asbab al-nuzul. The passage closes with a one-page Urdu summary. All output is in scholarly Urdu.
+
+```
+/recite 2:255-257
+/recite Surah al-Ikhlas
+/recite Ayat al-Kursi
+/recite the last 10 verses of al-Kahf
+```
+
+**What it produces:**
+
+1. Resolves the input to an explicit ayah list (warns at 20+ ayahs).
+2. Fetches research via the `/research` skill (reuses if already cached).
+3. Pulls Arabic + word-by-word + Khattab translation from quran.com per ayah.
+4. Dispatches one parallel agent per ayah to fill the fixed six-section template.
+5. Writes a final passage-wide summary covering meaning, lessons, purpose, and revelation context.
+6. Compiles into markdown and PDF.
+
+**Output structure:**
+```
+sessions/2026-04-28-recite-al-baqarah-255-257/
+  parts/
+    00-header.md                   # Title, date, ayah list, anchor link
+    01-ayah-2-255.md               # Fixed 6-section template
+    02-ayah-2-256.md               # Same template, applied uniformly
+    03-ayah-2-257.md               # Same template, applied uniformly
+    99-summary.md                  # One-page passage summary
+  session.md
+  session.pdf
+```
+
+The point of `recite` is **parallel structure** — predictable depth on every ayah, scannable for study and recitation. For varying-depth investigation use `/tadabbur`; for a single-ayah deep dive use `quran-explorer`.
 
 ---
 

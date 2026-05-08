@@ -10,6 +10,7 @@ This project provides deep, multi-layered Quranic verse exploration through AI-a
 - `/discover [topic]` — Encyclopedic exploration of any Quranic verse, hadith, Islamic concept, or theme. Packed with verified hadith, companion narrations, scholarly opinions, scientific connections, and contemporary relevance — compiled into a PDF.
 - `/research [topic]` — Gather exhaustive research on any Quranic verse, hadith, or Islamic concept. Fetches YouTube scholar transcripts, world news, hadith verification, and scientific research into a shared `research/` directory. Called directly for deep research, or internally by other skills.
 - `/tadabbur [verse, surah, event, concept, or topic]` — Deep investigative exploration through relentless "why, how, when, what" questioning, delivered as a unified scholarly lecture — compiled into a PDF.
+- `/recite [ayah, range, or passage]` — Structured ayah-by-ayah study guide entirely in Urdu. For each ayah: Arabic from quran.com, word-by-word Urdu translation, smooth Urdu translation (Mufti Taqi Usmani — Asaan Tarjuma), root word analysis, unified tafseer synthesis, and asbab al-nuzul. Closes with a passage-wide Urdu summary — compiled into a PDF.
 
 ## Skills
 
@@ -18,6 +19,7 @@ This project provides deep, multi-layered Quranic verse exploration through AI-a
 - `discover` — Encyclopedic Islamic knowledge explorer: verified hadith, companion stories, scholarly opinions (classical + contemporary), scientific connections, and modern relevance
 - `research` — Centralized research gathering: YouTube transcripts from 11+ scholars, world news snapshot, hadith verification, scientific research. Stores in shared `research/` directory keyed by topic. Called by divine/discover/tadabbur to avoid duplicate fetching.
 - `tadabbur` — Deep investigative exploration: single unified lecturer voice, relentless questioning (why this word not that, why here, why now), root analysis only where it serves the argument, disagreements as fuel for deeper questions
+- `recite` — Structured ayah-by-ayah Urdu study guide: fixed parallel template per ayah (Arabic, word-by-word Urdu, Mufti Taqi Usmani Urdu translation, 3-5 roots, unified tafseer paragraph in Urdu, asbab al-nuzul in Urdu), then a one-page Urdu passage summary
 - `md-to-pdf` — Converts markdown files to clean RTL PDFs with Nastaleeq font support
 
 ## Directory Structure

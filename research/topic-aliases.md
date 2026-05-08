@@ -37,3 +37,11 @@ Maps known aliases to canonical topic keys. Updated automatically by the researc
 | 27:17-19 | an-naml-17-19 |
 | valley of ants | an-naml-17-19 |
 | surah naml ant story | an-naml-17-19 |
+| al-fatiha | al-fatiha |
+| surah fatiha | al-fatiha |
+| surah al-fatiha | al-fatiha |
+| 1:1-7 | al-fatiha |
+| the opening | al-fatiha |
+| umm al-kitab | al-fatiha |
+| sab al-mathani | al-fatiha |
+| seven oft-repeated | al-fatiha |
