@@ -1,6 +1,8 @@
 # AI Ustadh
 
-AI-powered deep Quranic exploration through Claude Code skills. Distinct modes — `/divine`, `/discover`, `/tadabbur`, `/recite`, and `/research` — each approach the Quran from a different angle, backed by YouTube scholar transcripts, hadith verification, and scientific research.
+AI-powered deep Quranic exploration through Claude Code skills. Distinct modes — `/noor`, `/divine`, `/discover`, `/tadabbur`, `/recite`, `/fahm`, and `/research` — each approach the Quran from a different angle, backed by YouTube scholar transcripts, hadith verification, and scientific research.
+
+- **`/noor`**: Quranic storytelling for kids (uses analogies like baking cakes or Lego blocks to explain deep truths).
 
 All output is in Urdu, compiled into beautifully formatted RTL PDFs with Nastaleeq typography.
 

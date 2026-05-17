@@ -45,3 +45,6 @@ Maps known aliases to canonical topic keys. Updated automatically by the researc
 | umm al-kitab | al-fatiha |
 | sab al-mathani | al-fatiha |
 | seven oft-repeated | al-fatiha |
+| Surah Baqarah ruku 1 | al-baqarah-1-7 |
+| al-baqarah-1-7 | al-baqarah-1-7 |
+| 2:1-7 | al-baqarah-1-7 |

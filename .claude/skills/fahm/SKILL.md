@@ -59,20 +59,24 @@ Ensure `research/<topic-key>/` contains transcripts and web research. Dispatch `
 
 ### Step 4: Round 1 — Initial Curiosity (Internal)
 
-- **Learner Agent**: Reads the `recite` session content. Generates 3-5 deep, curious questions (e.g., "Why does this surah start with Alhamdulillah?", "What is the science behind the word 'Al-Hamd'?", "Why is Fatiha placed at the very beginning?").
-- **Scholar Agent**: Reads the questions, the `recite` content, and `research/<topic-key>/`. Formulates detailed, authentic answers in Urdu.
+- **Learner Agent**: Reads the `recite` session content. Generates 5-7 deep, probing questions. These must NOT be superficial. They must ask "Why", "How", and "What is the connection". 
+    - *Example questions*: "Why specifically 'Alameen'? What does it encompass beyond just 'worlds'?", "Why is 'Deen' used for Judgement Day instead of 'Qiyamah'?", "Why does worship come before seeking help?"
+- **Scholar Agent**: Reads the questions, the `recite` content, and `research/<topic-key>/`. 
+    - **Requirement**: Provide **exhaustive**, lengthy answers in scholarly Urdu. 
+    - **Examples**: MUST include concrete examples for every concept (e.g., an example of a 'Rab' vs a 'Owner', an example of 'Nasta'een' vs 'Istia'na').
+    - **Connections**: Explicitly explain the *Nazm* (coherence) and connection between the current ayah and the previous/next one.
 - Save to `parts/01-round1-qa.md`.
 
 ### Step 5: Round 2 — The Deeper Probe (Internal)
 
-- **Learner Agent**: Reads Round 1 answers. Generates 2-3 follow-up questions probing nuances, connections to other surahs, or linguistic subtleties ("If 'Al-Hamd' means gratitude, how does it differ from 'Shukr' in this context?").
-- **Scholar Agent**: Answers using research.
+- **Learner Agent**: Reads Round 1 answers. Generates 3-5 follow-up questions that challenge the Scholar's answers or ask for even more granular detail. Focus on historical context (Sabab al-Nuzul) and the psychological impact on the original audience.
+- **Scholar Agent**: Answers using research. Must be even more detailed than Round 1.
 - Save to `parts/02-round2-qa.md`.
 
 ### Step 6: Round 3 — The Final Synthesis (Internal)
 
-- **Learner Agent**: Reads Round 2 answers. Asks 1-2 final questions about the overarching wisdom, psychological impact, or "Living Ayah" application for the modern world.
-- **Scholar Agent**: Answers.
+- **Learner Agent**: Reads Round 2 answers. Asks 2-3 final questions about the "Living Message" and how this specific passage transforms a person's worldview in the 21st century.
+- **Scholar Agent**: Answers with a focus on practical, transformative application.
 - Save to `parts/03-round3-qa.md`.
 
 ### Step 7: Documentary Synthesis (User-Facing)
@@ -80,9 +84,11 @@ Ensure `research/<topic-key>/` contains transcripts and web research. Dispatch `
 **Synthesis Agent Prompt**:
 - Read `parts/01` through `03` and the original `recite` session.
 - Rewrite the entire journey into a **single, seamless, flowing documentary-style narrative** in scholarly Urdu.
-- **Style**: Nouman Ali Khan.
-- **Voice**: "At this point, you might wonder... and if you look at the roots... it's incredible because...".
-- The narrative should feel like one coherent lecture that has absorbed all the questions and answers.
+- **Style**: Nouman Ali Khan — engaging, pedagogical, and wonder-building.
+- **Depth**: The narrative must be **lengthy and highly informative**. Do NOT touch upon references subtly; explain them fully with the examples provided by the Scholar.
+- **Voice**: "Think about this... why did Allah choose this specific word... it's incredible because... for example...".
+- **Structure**: The narrative must naturally flow through every single question asked in the 3 rounds, weaving them into a coherent lecture.
+- **Length**: Aim for a substantial document (typically 800+ lines of Urdu prose).
 - **Language**: Urdu script only (A-Z only for URLs/references).
 - Save to `parts/04-synthesis.md`.
 
