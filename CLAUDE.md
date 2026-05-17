@@ -12,6 +12,7 @@ This project provides deep, multi-layered Quranic verse exploration through AI-a
 - `/research [topic]` — Gather exhaustive research on any Quranic verse, hadith, or Islamic concept. Fetches YouTube scholar transcripts, world news, hadith verification, and scientific research into a shared `research/` directory. Called directly for deep research, or internally by other skills.
 - `/tadabbur [verse, surah, event, concept, or topic]` — Deep investigative exploration through relentless "why, how, when, what" questioning, delivered as a unified scholarly lecture — compiled into a PDF.
 - `/recite [ayah, range, or passage]` — Structured ayah-by-ayah study guide entirely in Urdu. For each ayah: Arabic from quran.com, word-by-word Urdu translation, smooth Urdu translation (Mufti Taqi Usmani — Asaan Tarjuma), root word analysis, unified tafseer synthesis, and asbab al-nuzul. Closes with a passage-wide Urdu summary — compiled into a PDF.
+- `/quran-deep-research [ayah, range, short surah, event, or topic]` — Ultra-detailed Urdu knowledge dossier covering all seven layers in one document (translation/intro → roots → context/rhetoric → classical+modern scholars → morals/fiqh → historical impact → multi-lens). The "kitchen-sink" skill — for when the user wants every dimension at once instead of choosing a lens. Compiled into a PDF.
 
 ## Skills
 
@@ -21,6 +22,7 @@ This project provides deep, multi-layered Quranic verse exploration through AI-a
 - `research` — Centralized research gathering: YouTube transcripts from 11+ scholars, world news snapshot, hadith verification, scientific research. Stores in shared `research/` directory keyed by topic. Called by divine/discover/tadabbur to avoid duplicate fetching.
 - `tadabbur` — Deep investigative exploration: single unified lecturer voice, relentless questioning (why this word not that, why here, why now), root analysis only where it serves the argument, disagreements as fuel for deeper questions
 - `recite` — Structured ayah-by-ayah Urdu study guide: fixed parallel template per ayah (Arabic, word-by-word Urdu, Mufti Taqi Usmani Urdu translation, 3-5 roots, unified tafseer paragraph in Urdu, asbab al-nuzul in Urdu), then a one-page Urdu passage summary
+- `quran-deep-research` — Seven-layer ultra-detailed Urdu knowledge document: (1) translation + word-by-word + asbab al-nuzul, (2) root-word lexicon analysis, (3) context + word order + rhetoric, (4) classical + modern scholar opinions with consensus/disagreement, (5) morals + character + spiritual + fiqh, (6) Prophetic era → later Islamic history → modern relevance, (7) scientific / psychological / sociological / philosophical / economic / environmental lenses. Reuses the shared `research/` library.
 - `md-to-pdf` — Converts markdown files to clean RTL PDFs with Nastaleeq font support
 
 ## Directory Structure
