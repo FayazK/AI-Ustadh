@@ -132,3 +132,29 @@ authentic closing dua. Host thanks the guests and signs off the show.
 ### Part 09 — حوالہ جات (`09-references.md`)
 **References.** All ayat (quran.com links), all hadith (sunnah.com links + grade), scholars cited,
 and web sources used across the episode. (Format template in Execution Flow.)
+
+## Length Guidance (simulating a real 1–3 hour podcast)
+
+Pick a band from the parsed topic's breadth. Targets are **word-count floors** mapped to spoken
+minutes at ~130 words/min for Urdu. Part 03 always carries the largest single share (~30%).
+
+| Topic breadth | Target | ≈ Words (floor) |
+|---------------|--------|-----------------|
+| Narrow — single ayah / single hadith / one act | ~1 hr | ≈ 8,000–10,000 |
+| Medium — ayah range / focused concept | ~1.5–2 hr | ≈ 13,000–18,000 |
+| Broad — event / large theme / surah | up to 3 hr | ≈ 22,000–27,000 |
+
+Each segment agent is told its **word-count floor** (its percentage share × the chosen total) so the
+compiled transcript actually reaches the target. If unsure of the band, confirm with the user at
+parse time.
+
+## Voice & Language
+
+- **Strictly simple, conversational Urdu.** Even "high-level" content is made beginner-accessible;
+  every technical term (Arabic, fiqh, hadith-science) is explained on first use, in dialogue.
+- **Speaker labels** in bold, exactly: `**میزبان:**`, `**عالمِ اصول:**`, `**عالمِ عصر:**`.
+- **Natural turn-taking** — questions, follow-ups, «ذرا رکیے، یہ سمجھائیے…», building on each other.
+  No long uninterrupted monologues; the host breaks them up.
+- The host covers **all levels and all fields** and keeps returning to «کیا، کیوں، کیسے، کب».
+- **Do not embed Arabic ayah text** — link to quran.com (e.g. `[آیت پڑھیں](https://quran.com/2/255)`).
+  Keep Arabic terms, transliterations, scholar names, book titles, and URLs in original form.
