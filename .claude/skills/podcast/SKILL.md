@@ -76,7 +76,8 @@ would ground the episode, and confirm with the user before proceeding.
 ## Episode Structure — The 10 Parts
 
 Each part is a separate `parts/NN-*.md` file, written by its own agent, then compiled in order.
-Percentages are share of total transcript length.
+Parts 00 (header) and 09 (references) are meta and carry no length share; the eight content parts
+(01–08) are sized as a percentage of total transcript length and sum to 100%.
 
 ### Part 00 — Header (`00-header.md`)
 Meta only (see template in Execution Flow). Episode title, date, topic, anchor reference, research
@@ -87,7 +88,7 @@ key, and a one-line intro of the recurring cast.
 *why it matters to an ordinary listener*; teases the questions the episode will answer. Ends with the
 host turning to the Aalims with the first real question. Pure dialogue.
 
-### Part 02 — قرآن و حدیث میں اصل بنیاد (`02-foundation.md`) · ~12%
+### Part 02 — قرآن و حدیث میں اصل بنیاد (`02-foundation.md`) · ~13%
 **The verified textual foundation.** Host asks: «اس کی اصل بنیاد قرآن اور حدیث میں کہاں ہے؟»
 عالمِ اصول lays out the relevant ayat (linked to quran.com) and the authentic hadith (with source +
 grade). عالمِ عصر translates each into plain meaning for the listener. Establish what is *definitely*
@@ -140,9 +141,9 @@ minutes at ~130 words/min for Urdu. Part 03 always carries the largest single sh
 
 | Topic breadth | Target | ≈ Words (floor) |
 |---------------|--------|-----------------|
-| Narrow — single ayah / single hadith / one act | ~1 hr | ≈ 8,000–10,000 |
-| Medium — ayah range / focused concept | ~1.5–2 hr | ≈ 13,000–18,000 |
-| Broad — event / large theme / surah | up to 3 hr | ≈ 22,000–27,000 |
+| Narrow — single ayah / single hadith / one act | ~1 hr | ≈ 7,800–9,000 |
+| Medium — ayah range / focused concept | ~1.5–2 hr | ≈ 11,700–15,600 |
+| Broad — event / large theme / surah | ~2.5–3 hr | ≈ 19,500–23,400 |
 
 Each segment agent is told its **word-count floor** (its percentage share × the chosen total) so the
 compiled transcript actually reaches the target. If unsure of the band, confirm with the user at
@@ -152,7 +153,9 @@ parse time.
 
 - **Strictly simple, conversational Urdu.** Even "high-level" content is made beginner-accessible;
   every technical term (Arabic, fiqh, hadith-science) is explained on first use, in dialogue.
-- **Speaker labels** in bold, exactly: `**میزبان:**`, `**عالمِ اصول:**`, `**عالمِ عصر:**`.
+- **Speaker labels** for every dialogue turn, in bold, exactly: `**میزبان:**`, `**عالمِ اصول:**`,
+  `**عالمِ عصر:**`. (The fuller roster form `میزبان: طالبِ علم` appears only in the 00-header cast
+  list, never as a turn label.)
 - **Natural turn-taking** — questions, follow-ups, «ذرا رکیے، یہ سمجھائیے…», building on each other.
   No long uninterrupted monologues; the host breaks them up.
 - The host covers **all levels and all fields** and keeps returning to «کیا، کیوں، کیسے، کب».
@@ -162,7 +165,7 @@ parse time.
 ## Session Directory Structure
 
 ```
-sessions/YYYY-MM-DD-podcast-[name]/
+sessions/YYYY-MM-DD-podcast-<topic-key>/
   parts/
     00-header.md
     01-intro.md
@@ -187,7 +190,7 @@ digraph podcast_flow {
     parse    [label="Step 1: Parse & Identify\n(create dir + 00-header.md, pick length band, confirm)"];
     research [label="Step 2: Gather Research\n(dispatch /research skill)"];
     rundown  [label="Step 3: Draft the host rundown\n(question spine per segment — internal)"];
-    seg      [label="Step 4: Agent per segment\n(01-intro ... 08-closing)"];
+    seg      [label="Step 4: Agent per segment + length check\n(01-intro ... 08-closing)"];
     refs     [label="Step 5: References (09-references.md)"];
     compile  [label="Step 6: Compile & PDF"];
     summary  [label="Step 7: Present summary"];
@@ -198,8 +201,15 @@ digraph podcast_flow {
 ### Step 1: Parse and Identify
 - Resolve the input to a clear subject + anchor reference(s). For ambiguous/broad input, present
   2–3 angles and confirm with the user.
+- **Derive the canonical `<topic-key>`** using the same normalization the `/research` skill uses
+  (verse → `<surah-slug>-<ayah>`; named verse/surah → resolve to surah:ayah then slugify; thematic →
+  canonical Arabic/Islamic term, slugified; check `research/topic-aliases.md` for existing mappings).
+  Use this **same key as the session `[name]`** so the session and research dirs share one slug:
+  `sessions/YYYY-MM-DD-podcast-<topic-key>/` ↔ `research/<topic-key>/`.
 - Pick the length band (Length Guidance) and confirm if unsure.
-- Create `sessions/YYYY-MM-DD-podcast-[name]/parts/` and write `parts/00-header.md`:
+- Create `sessions/YYYY-MM-DD-podcast-<topic-key>/parts/` and write `parts/00-header.md`. For a
+  thematic/event topic whose single best anchor ayah/hadith is not yet certain, write a
+  **provisional** anchor and mark it «(تصدیق باقی — Step 2)» so Step 2 backfills it after research:
 
 ```markdown
 # پوڈکاسٹ: [موضوع کا نام]
@@ -218,17 +228,27 @@ digraph podcast_flow {
 ---
 ```
 
-- Present the topic, anchor reference, and chosen length band to the user before proceeding.
+- Present the topic, canonical key, anchor reference, and chosen length band to the user before proceeding.
 
 ### Step 2: Gather Research
-Dispatch the `/research` skill:
+Dispatch the `/research` skill (it resolves and returns the canonical `<topic-key>` — use that exact
+key for the research path):
 - **Topic:** [topic from Step 1]
 - **Needs:** transcripts, current-events, hadith-verification, scientific-research
 - **Mode:** skill-called
 - **Minimum transcripts:** 3
 
-Reuse `research/<topic-key>/` if it already exists and is sufficient. Mine transcripts for authentic
-hadith, real scholarly opinions (with names), historical detail, and common misconceptions to debunk.
+Reuse `research/<topic-key>/` if it already exists and is sufficient (the research skill's own
+skill-called sufficiency check already re-fetches stale current-events, so no separate freshness
+gate is needed here). Mine transcripts for authentic hadith, real scholarly opinions (with names),
+and historical detail. **For Part 06**, additionally collect the topic's **real circulating
+misconceptions** — from the transcripts and, if thin, a dedicated WebSearch
+(e.g. «[topic] common misconceptions / [موضوع] سے متعلق غلط فہمیاں») — so the myth-busting segment
+debunks actual beliefs, not invented ones.
+
+If the canonical `<topic-key>` or anchor differs from the provisional values written in
+`00-header.md` at Step 1, **update `00-header.md`** (its `Research:` path and `بنیادی حوالہ` anchor)
+to match what research resolved before continuing.
 
 ### Step 3: Draft the Host Rundown
 Before dispatching segment agents, draft the host's **question spine** — the actual `میزبان` questions
@@ -238,10 +258,13 @@ what/why/how/when questions at both beginner and advanced levels, plus the speci
 Part 06.
 
 ### Step 4: Dispatch one agent per segment (01 → 08)
-Dispatch sequentially. Each agent:
-- **Must read** the prior compiled parts (for continuity of what's already been said) and the relevant
-  `research/<topic-key>/` files: all transcripts for every segment; additionally
-  `web/hadith-verification.md` for 02/03/06, `web/scientific-research.md` for 03/05,
+Dispatch sequentially so each agent can build on what came before. Each agent:
+- **Must read** the prior `parts/*.md` files already written this run (`00-header.md` through the most
+  recent segment) — for continuity of what's already been said — plus its slice of the rundown, which
+  already distills the transcript material with citations. Open specific
+  `research/<topic-key>/transcripts/` files only when a direct quote or attribution is needed; do
+  **not** bulk-read the whole transcript corpus in every segment. Additionally read the web file(s)
+  for its part: `web/hadith-verification.md` for 02/03/06, `web/scientific-research.md` for 03/05,
   `web/current-events.md` for 05.
 - **Must be given in its prompt:** the Cast section, the Hard Authenticity Rule, the Voice & Language
   rules, its Part brief + percentage share, its **word-count floor**, and its slice of the rundown.
@@ -249,11 +272,20 @@ Dispatch sequentially. Each agent:
 
 Segment-specific reminders to include:
 - 02/03/06: every hadith needs source + grade; attribute opinions to real scholars; verify with WebSearch.
-- 06: for each myth — popular belief → why not authentic (evidence) → the authentic position (source).
+- 06: use only **real, circulating** misconceptions sourced from the rundown/research (or verified via
+  WebSearch) — never invent a myth to fill the segment. For each: popular belief → why not authentic
+  (evidence) → the authentic position (source). If few authentic-sourced myths exist, the segment is
+  shorter and says so rather than fabricating.
 - 03: must be the longest; every advanced point re-explained simply.
 
+After all eight segments are written, **check each part's word count against its floor**. If a segment
+falls short, re-dispatch that agent to expand it with genuine Q&A depth (more follow-up questions,
+examples, attributed ikhtilaf) — never filler or repetition — until it meets its floor.
+
 ### Step 5: References
-Dispatch an agent to read all parts and compile `parts/09-references.md`:
+First verify parts 01–08 all exist and are non-empty (re-dispatch any missing or failed segment before
+proceeding — otherwise the references will silently omit whatever that segment cited). Then dispatch an
+agent to read all parts and compile `parts/09-references.md`:
 
 ```markdown
 ---
@@ -274,38 +306,44 @@ Dispatch an agent to read all parts and compile `parts/09-references.md`:
 ```
 
 ### Step 6: Compile and Generate PDF
-1. Compile parts in order into `session.md`:
+Run from the project root (no `cd` — all paths are root-relative via `$SESSION`). The guard aborts if
+any part is missing or empty, so a silently failed agent never produces a truncated PDF; parts are
+joined with a blank line between them so one part's last line cannot fuse into the next part's heading:
 
 ```bash
-cd sessions/YYYY-MM-DD-podcast-[name]
-cat parts/00-header.md parts/01-intro.md parts/02-foundation.md parts/03-depth.md \
-    parts/04-history.md parts/05-today.md parts/06-myths.md parts/07-emergent-qa.md \
-    parts/08-closing.md parts/09-references.md > session.md
-```
+SESSION=sessions/YYYY-MM-DD-podcast-<topic-key>
 
-2. Generate the PDF with the md-to-pdf skill:
+# Guard: every expected part must exist and be non-empty before compiling
+for f in 00-header 01-intro 02-foundation 03-depth 04-history 05-today 06-myths 07-emergent-qa 08-closing 09-references; do
+  test -s "$SESSION/parts/$f.md" || { echo "MISSING/EMPTY: $f.md — re-dispatch its agent before compiling"; exit 1; }
+done
 
-```bash
-node .claude/skills/md-to-pdf/convert.mjs sessions/YYYY-MM-DD-podcast-[name]/session.md
+# Compile in order, with a blank line between parts
+cat "$SESSION/parts/00-header.md" > "$SESSION/session.md"
+for f in 01-intro 02-foundation 03-depth 04-history 05-today 06-myths 07-emergent-qa 08-closing 09-references; do
+  echo "" >> "$SESSION/session.md"
+  cat "$SESSION/parts/$f.md" >> "$SESSION/session.md"
+done
+
+# Generate the PDF with the md-to-pdf skill
+node .claude/skills/md-to-pdf/convert.mjs "$SESSION/session.md"
 ```
 
 ### Step 7: Present Summary
-Give the user: the episode title, the central question the episode answered, the most striking myth
-debunked in Part 06, the counts of ayat / hadith / scholars referenced, the chosen length band, and
-the directory + `session.pdf` paths.
+Derive the counts of ayat / hadith / scholars from `parts/09-references.md` (cross-checked against the
+parts), and take the most striking myth from `parts/06-myths.md`. Give the user: the episode title, the
+central question the episode answered, that striking myth from Part 06, the counts of ayat / hadith /
+scholars referenced, the chosen length band, and the directory + `session.pdf` paths.
 
 ## Language and Format Rules
 
-- **All output must be in simple, conversational Urdu** (Arabic ayah text excepted — it is linked, not embedded).
-- Keep Arabic Islamic terms, transliterations, scholar names, book titles, and URLs in original form.
-- Use WebSearch / WebFetch to verify references from sunnah.com, quran.com, altafsir.com, islamweb.net.
-- Never fabricate quotes, hadith, references, or scholarly opinions. When uncertain, state the limitation in-character.
+The **Voice & Language** rules and the **Hard Authenticity Rule** above govern all output and apply to
+every part and every agent — they are not restated here. The only addition: cross-check every reference
+against **sunnah.com, quran.com, altafsir.com, islamweb.net** (via WebSearch / WebFetch).
 
 ## Important Notes
 
-- Each segment agent **must read** its specified prior parts + research files — do not skip this.
-- The recurring cast labels must stay identical across parts and across episodes.
-- Part 03 (گہرائی) must be the longest and most content-dense segment.
-- The Hard Authenticity Rule overrides conversational flair whenever they conflict — especially in Part 06.
-- If any agent fails, its part file will be missing — check before compiling.
-- The final PDF should read like the transcript of the most useful podcast episode a listener has heard on the topic — simple enough for a beginner, deep enough for a student.
+- The recurring cast labels must stay identical across parts and across episodes (roster form
+  `میزبان: طالبِ علم` only in the header; dialogue turns use `**میزبان:**`).
+- The final PDF should read like the transcript of the most useful podcast episode a listener has heard
+  on the topic — simple enough for a beginner, deep enough for a student.
