@@ -48,3 +48,16 @@ Maps known aliases to canonical topic keys. Updated automatically by the researc
 | Surah Baqarah ruku 1 | al-baqarah-1-7 |
 | al-baqarah-1-7 | al-baqarah-1-7 |
 | 2:1-7 | al-baqarah-1-7 |
+| honey | honey |
+| shahad | honey |
+| shahd | honey |
+| asal | honey |
+| honey in quran | honey |
+| honey bee | honey |
+| an-nahl-68-69 | honey |
+| 16:68-69 | honey |
+| surah nahl bee | honey |
+| wahi to the bee | honey |
+| honey shifa | honey |
+| honey vs sugar | honey |
+| honey and diabetes | honey |
