@@ -158,3 +158,154 @@ parse time.
 - The host covers **all levels and all fields** and keeps returning to «کیا، کیوں، کیسے، کب».
 - **Do not embed Arabic ayah text** — link to quran.com (e.g. `[آیت پڑھیں](https://quran.com/2/255)`).
   Keep Arabic terms, transliterations, scholar names, book titles, and URLs in original form.
+
+## Session Directory Structure
+
+```
+sessions/YYYY-MM-DD-podcast-[name]/
+  parts/
+    00-header.md
+    01-intro.md
+    02-foundation.md
+    03-depth.md
+    04-history.md
+    05-today.md
+    06-myths.md
+    07-emergent-qa.md
+    08-closing.md
+    09-references.md
+  session.md          ← compiled from all parts
+  session.pdf         ← final PDF
+```
+
+## Execution Flow
+
+```dot
+digraph podcast_flow {
+    rankdir=TB;
+    node [shape=box];
+    parse    [label="Step 1: Parse & Identify\n(create dir + 00-header.md, pick length band, confirm)"];
+    research [label="Step 2: Gather Research\n(dispatch /research skill)"];
+    rundown  [label="Step 3: Draft the host rundown\n(question spine per segment — internal)"];
+    seg      [label="Step 4: Agent per segment\n(01-intro ... 08-closing)"];
+    refs     [label="Step 5: References (09-references.md)"];
+    compile  [label="Step 6: Compile & PDF"];
+    summary  [label="Step 7: Present summary"];
+    parse -> research -> rundown -> seg -> refs -> compile -> summary;
+}
+```
+
+### Step 1: Parse and Identify
+- Resolve the input to a clear subject + anchor reference(s). For ambiguous/broad input, present
+  2–3 angles and confirm with the user.
+- Pick the length band (Length Guidance) and confirm if unsure.
+- Create `sessions/YYYY-MM-DD-podcast-[name]/parts/` and write `parts/00-header.md`:
+
+```markdown
+# پوڈکاسٹ: [موضوع کا نام]
+
+**تاریخ:** YYYY-MM-DD
+**نوعیت:** پوڈکاسٹ — میزبان اور دو علماء کی گفتگو
+**موضوع:** [موضوع کی تفصیل]
+**بنیادی حوالہ:** [quran.com یا sunnah.com link]
+**Research:** research/<topic-key>/
+
+**شرکاء:**
+- **میزبان: طالبِ علم** — سوالات کرنے والا
+- **عالمِ اصول** — قرآن، تفسیر، حدیث و تاریخ کا ماہر
+- **عالمِ عصر** — عصری اطلاق اور غلط فہمیوں کی اصلاح کا ماہر
+
+---
+```
+
+- Present the topic, anchor reference, and chosen length band to the user before proceeding.
+
+### Step 2: Gather Research
+Dispatch the `/research` skill:
+- **Topic:** [topic from Step 1]
+- **Needs:** transcripts, current-events, hadith-verification, scientific-research
+- **Mode:** skill-called
+- **Minimum transcripts:** 3
+
+Reuse `research/<topic-key>/` if it already exists and is sufficient. Mine transcripts for authentic
+hadith, real scholarly opinions (with names), historical detail, and common misconceptions to debunk.
+
+### Step 3: Draft the Host Rundown
+Before dispatching segment agents, draft the host's **question spine** — the actual `میزبان` questions
+for each of parts 01–08 (this realizes "the host has all the questions"). This is internal working
+material passed into each segment agent's prompt; it is NOT a separate output file. Include
+what/why/how/when questions at both beginner and advanced levels, plus the specific myths to test in
+Part 06.
+
+### Step 4: Dispatch one agent per segment (01 → 08)
+Dispatch sequentially. Each agent:
+- **Must read** the prior compiled parts (for continuity of what's already been said) and the relevant
+  `research/<topic-key>/` files: all transcripts for every segment; additionally
+  `web/hadith-verification.md` for 02/03/06, `web/scientific-research.md` for 03/05,
+  `web/current-events.md` for 05.
+- **Must be given in its prompt:** the Cast section, the Hard Authenticity Rule, the Voice & Language
+  rules, its Part brief + percentage share, its **word-count floor**, and its slice of the rundown.
+- **Writes** only its `parts/NN-*.md`, as pure speaker-labelled dialogue (no narration/essay).
+
+Segment-specific reminders to include:
+- 02/03/06: every hadith needs source + grade; attribute opinions to real scholars; verify with WebSearch.
+- 06: for each myth — popular belief → why not authentic (evidence) → the authentic position (source).
+- 03: must be the longest; every advanced point re-explained simply.
+
+### Step 5: References
+Dispatch an agent to read all parts and compile `parts/09-references.md`:
+
+```markdown
+---
+
+## حوالہ جات
+
+### قرآنی حوالے
+- [each cross-referenced ayah with quran.com link]
+
+### احادیث (درجہ بندی کے ساتھ)
+- [each hadith with sunnah.com link and grade — صحیح/حسن/ضعیف/موضوع]
+
+### علماء کی آراء
+- [each named scholar whose opinion was cited]
+
+### ویب مصادر
+- [web sources used]
+```
+
+### Step 6: Compile and Generate PDF
+1. Compile parts in order into `session.md`:
+
+```bash
+cd sessions/YYYY-MM-DD-podcast-[name]
+cat parts/00-header.md parts/01-intro.md parts/02-foundation.md parts/03-depth.md \
+    parts/04-history.md parts/05-today.md parts/06-myths.md parts/07-emergent-qa.md \
+    parts/08-closing.md parts/09-references.md > session.md
+```
+
+2. Generate the PDF with the md-to-pdf skill:
+
+```bash
+node .claude/skills/md-to-pdf/convert.mjs sessions/YYYY-MM-DD-podcast-[name]/session.md
+```
+
+### Step 7: Present Summary
+Give the user: the episode title, the central question the episode answered, the most striking myth
+debunked in Part 06, the counts of ayat / hadith / scholars referenced, the chosen length band, and
+the directory + `session.pdf` paths.
+
+## Language and Format Rules
+
+- **All output must be in simple, conversational Urdu** (Arabic ayah text excepted — it is linked, not embedded).
+- Keep Arabic Islamic terms, transliterations, scholar names, book titles, and URLs in original form.
+- Use WebSearch / WebFetch to verify references from sunnah.com, quran.com, altafsir.com, islamweb.net.
+- Never fabricate quotes, hadith, references, or scholarly opinions. When uncertain, state the limitation in-character.
+
+## Important Notes
+
+- Each segment agent **must read** its specified prior parts + research files — do not skip this.
+- The recurring cast labels must stay identical across parts and across episodes.
+- Part 03 (گہرائی) must be the longest and most content-dense segment.
+- The Hard Authenticity Rule overrides conversational flair whenever they conflict — especially in Part 06.
+- If any agent fails, its part file will be missing — check before compiling.
+- The final PDF should read like the transcript of the most useful podcast episode a listener has heard on the topic — simple enough for a beginner, deep enough for a student.
