@@ -61,3 +61,14 @@ Maps known aliases to canonical topic keys. Updated automatically by the researc
 | honey shifa | honey |
 | honey vs sugar | honey |
 | honey and diabetes | honey |
+| salah | salah |
+| namaz | salah |
+| prayer | salah |
+| namaz ki rakatain | salah |
+| rakat of namaz | salah |
+| fard sunnah nafl witr | salah |
+| witr | salah |
+| sunnat e muakkadah | salah |
+| how to pray | salah |
+| prayer timings | salah |
+| awqat e namaz | salah |

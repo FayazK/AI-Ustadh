@@ -1,0 +1,37 @@
+# Salah — Current Events & Modern-Life Snapshot
+
+**Fetched:** 2026-05-30
+
+A topical snapshot for the episode's "modern application" segment. Part (a) is salah in modern Muslim life; part (b) is a compact late-May-2026 world-news pass for context. One line + link per item. All items link out; treat anything beyond the headline as needing verification before quoting on air.
+
+---
+
+## (a) Prayer in modern Muslim life
+
+1. **Prayer on the wrist — smartwatch apps are mainstream (2026).** Apps like Pray Watch, Athan Pro, IslamApp and Guidance now push athan, qibla and prayer-time complications straight to the Apple Watch face, with haptic prayer-time alerts. — https://praywatch.app/ · https://apps.apple.com/us/app/islamapp-prayer-times-qibla/id1452368807
+2. **Workplace prayer breaks under a tighter US legal standard.** After the 2023 Supreme Court *Groff v. DeJoy* ruling, HR guidance for 2026 stresses employers must reasonably accommodate Muslim prayer breaks/prayer space unless it imposes "substantial increased cost." — https://www.whitefordlaw.com/news-events/workplace-religious-accommodations-and-islamic-prayer · https://www.eeoc.gov/fact-sheet/questions-and-answers-about-workplace-rights-muslims-arabs-south-asians-and-sikhs-under
+3. **Ramadan-in-the-workplace playbooks for 2026.** Mainstream HR outlets published 2026 best-practice guides on flex hours, prayer breaks and rescheduling lunch meetings during Ramadan (Feb 17 – Mar 19, 2026). — https://www.worktango.com/resources/articles/ramadan-in-the-workplace-hr-best-practices
+4. **Designated prayer rooms vs. "any quiet space."** US legal commentary clarifies employers need not build a dedicated prayer room — offering a temporary private/unused space (meeting room, empty office) is usually a sufficient accommodation — a live debate for offices, campuses and airports. — https://www.nolo.com/legal-encyclopedia/does-our-company-provide-us-place-pray.html
+5. **Mohamed Salah's sujood as global da'wah.** The Liverpool star prostrates in sujood after almost every goal, the most visible expression of salah in world sport; research from his Liverpool years linked his presence to measurable drops in local hate incidents and anti-Muslim tweets. — https://www.footballdive.com/2025/09/12/top-10-famous-muslim-football-players-salah-zidane-pogba-and-more/
+6. **Premier League institutionalizes accommodation.** 55 Muslim players across the league's 20 clubs this season; English football continues pausing evening matches at sunset so players can break their fast. — https://news.22bet.com/opinion/muslim-players-premier-league-ramadan-impact/
+7. **Old Trafford hosts a historic Ramadan iftar (Feb 24, 2026).** Manchester United held a stadium-wide iftar with the adhan echoing across the ground and communal prayer/Qur'an recitation — a marker of mainstream Western institutions accommodating Muslim worship. — https://www.moroccoworldnews.com/2026/02/279619/muslim-football-players-fasting-for-ramadan-2026-in-europes-top-leagues/
+8. **The "TikTok masjid" — youth outreach that works.** The Islamic Society of Baltimore grew to ~300k Instagram and ~200k TikTok followers with relatable, everyday-Islam videos aimed at younger Muslims (Religion News, Mar 2026). — https://religionnews.com/2026/03/25/were-not-strangers-how-a-baltimore-masjids-relatable-videos-led-to-instagram-fame/
+9. **Viral mockery of salah sparks backlash (the other side of youth + social media).** A Turkish Gen-Z TikTok trend ("Ömer Baba" scene) that exaggerated and mocked prayer movements drew condemnation from scholars and Muslim outlets in late 2025 / early 2026 — a cautionary thread on youth, faith and platforms. — https://zeenews.india.com/world/turkeys-gen-z-stuns-muslim-world-with-viral-videos-what-theyre-doing-during-namaz-will-shock-you-dna-3000181.html
+10. **Hajj 2026 just peaked (May 25–27) — salah at the largest scale.** Nearly 2 million pilgrims stood for prayer on Mount Arafat (May 26) and performed the Mina rituals — the most concentrated collective salah on earth, happening this very week. — https://www.aljazeera.com/news/2026/5/18/when-are-hajj-and-eid-al-adha-2026-a-visual-guide-to-the-muslim-pilgrimage · https://www.pbs.org/newshour/amp/world/muslim-pilgrims-converge-on-mount-arafat-in-saudi-arabia-as-the-hajj-reaches-its-pinnacle
+
+---
+
+## (b) Brief world-news snapshot — late May 2026
+
+> Dominant context this week: a **regional Iran war / Strait of Hormuz crisis** is rattling energy markets and overshadowing Hajj, while Europe bakes under a record May heatwave.
+
+1. **Iran / Strait of Hormuz crisis.** US imposed new sanctions on Iran's military oil trade and struck southern Iran after Iran fired drones at Hormuz shipping; a tentative ceasefire to reopen the strait is fragile (fighting resumed at lower levels since early May). — https://www.fdd.org/overnight-brief/may-29-2026/
+2. **Gaza.** Netanyahu said he directed the military to take over ~70% of Gaza; reported ceasefire violations continue, with hundreds of Palestinians killed since the truce began. — https://en.wikipedia.org/wiki/Gaza_war
+3. **Sudan.** War in Kordofan rages on; a US/Egypt/Saudi/UAE-brokered truce is stuck as the army rejects the ceasefire proposal — flagged as 2026's most likely conflict to escalate. — https://www.middleeasteye.net/news/israel-palestine-syria-yemen-and-sudan-among-conflicts-watch-2026-report-says
+4. **Ukraine–Russia.** The war grinds on into late May 2026; high-profile Russian calls to "end the bloodbath" drew ridicule in Ukraine. — https://news.un.org/en/story/2026/03/1167112
+5. **Global economy darkens.** ~9 in 10 chief economists (WEF, May 2026) expect weaker growth over the next year as the Hormuz disruption fuels a feared global shock; world output forecast ~2.7% for 2026. — https://www.weforum.org/press/2026/05/global-economic-outlook-hangs-in-balance-between-geopolitical-headwinds-and-ai-boost-chief-economists-warn/
+6. **Energy & inflation spike.** Brent crude near $120 (up ~50% from pre-conflict levels); 94% of chief economists expect global inflation to rise on energy/food and supply-chain disruption. — https://www.crestwoodadvisors.com/may-2026-economic-and-market-update/
+7. **AI keeps expanding, optimism cooling.** 92% of chief economists expect greater AI adoption this year, but expectations for near-term productivity gains have been pushed further out vs. January 2026. — https://www.weforum.org/press/2026/05/global-economic-outlook-hangs-in-balance-between-geopolitical-headwinds-and-ai-boost-chief-economists-warn/
+8. **Record May heatwave in Europe.** UK hit 35°C — its hottest-ever May temperature two days running; the UN urged a faster clean-power shift. — https://www.euronews.com/2026/05/28/a-brutal-reminder-of-climate-change-europes-may-heatwave-sparks-un-calls-to-shift-to-clean
+9. **UN climate warning.** 86% chance one of the next five years beats 2024 as the hottest on record; 75% chance the 2026–2030 average exceeds 1.5°C above pre-industrial levels. — https://www.aljazeera.com/news/2026/5/28/hottest-year-in-history-almost-certain-to-occur-by-end-of-2030-un-warns
+10. **Muslim-world / Hajj security.** Nearly 2M pilgrims completed Hajj 2026 against the backdrop of the Iran-war ceasefire; Saudi Arabia paused some short-term visas (routine pilgrim-flow management) for 14 countries. — https://www.npr.org/2026/05/25/nx-s1-5833671/muslims-begin-annual-hajj · https://blog.wego.com/hajj-2026-news-and-update/
