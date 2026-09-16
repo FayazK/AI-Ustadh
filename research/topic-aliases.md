@@ -72,3 +72,36 @@ Maps known aliases to canonical topic keys. Updated automatically by the researc
 | how to pray | salah |
 | prayer timings | salah |
 | awqat e namaz | salah |
+| hijab-libas-women | hijab-libas-women |
+| hijab | hijab-libas-women |
+| parda | hijab-libas-women |
+| purdah | hijab-libas-women |
+| pardah | hijab-libas-women |
+| women hijab | hijab-libas-women |
+| women dress islam | hijab-libas-women |
+| libas of women | hijab-libas-women |
+| aurat ka parda | hijab-libas-women |
+| khimar | hijab-libas-women |
+| jilbab | hijab-libas-women |
+| niqab | hijab-libas-women |
+| satr | hijab-libas-women |
+| veil | hijab-libas-women |
+| modesty dress women | hijab-libas-women |
+| khalq-e-adam | khalq-e-adam |
+| adam | khalq-e-adam |
+| hazrat adam | khalq-e-adam |
+| creation of adam | khalq-e-adam |
+| takhleeq-e-insan | khalq-e-adam |
+| takhleeq e adam | khalq-e-adam |
+| human origins islam | khalq-e-adam |
+| adam and evolution | khalq-e-adam |
+| islam and evolution | khalq-e-adam |
+| nazriya irtiqa | khalq-e-adam |
+| pre-adamic humans | khalq-e-adam |
+| first human being | khalq-e-adam |
+| al-baqarah-30-39 | khalq-e-adam |
+| 2:30-39 | khalq-e-adam |
+| rooh | khalq-e-adam |
+| ruh | khalq-e-adam |
+| ahl al-fatra | khalq-e-adam |
+| mitochondrial eve islam | khalq-e-adam |
