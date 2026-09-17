@@ -523,7 +523,7 @@
 | Adam-Musa debate | Bukhari 6614 | Sahih |
 | Alast: Umar's hadith | Tirmidhi 3075 / Muwatta 46:2 / Abu Dawud 4703 | Hasan (Tirmidhi) with a break; da'if (Darussalam); sahih except "wiping the back" (Albani) |
 | Adam gives 40 years to Dawud (no lifespan for Adam stated) | Tirmidhi 3076 | Hasan sahih (Tirmidhi), hasan (Darussalam), sahih on Muslim's conditions (Hakim) |
-| Adam's 1,000 years ("a thousand years were written for me"; 60 to Dawud; the sneeze hadith) | Tirmidhi 3368 | Hasan gharib (Tirmidhi); hasan sahih (Albani, Sahih al-Tirmidhi 3368); hasan (Darussalam); sahih (Hakim 216). CORRECTION 2026-09-17: earlier drafts attributed the 1,000 years to 3076; 3076 contains no lifespan for Adam. |
+| Adam's 1,000 years ("a thousand years were written for me"; 60 to Dawud; the sneeze hadith) | Tirmidhi 3368 (sunnah.com: 3367, Book 47 Hadith 420, https://sunnah.com/tirmidhi:3367) | Hasan gharib (Tirmidhi); hasan sahih (Albani, Sahih al-Tirmidhi 3368); hasan (Darussalam); sahih (Hakim 216). CORRECTION 2026-09-17: earlier drafts attributed the 1,000 years to 3076; 3076 contains no lifespan for Adam. |
 | Hawwa's name | Bukhari 3330 / Muslim 1470 | Sahih |
 | "Sent to the red and the black" | Muslim 521 | Sahih |
 | Hears of me and disbelieves, enters the Fire | Muslim 153 | Sahih |
