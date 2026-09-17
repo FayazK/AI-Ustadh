@@ -373,7 +373,7 @@ These are beliefs actually found circulating (Quora, Reddit, Urdu fatwa Q&A site
 
 **Why it is not authentic / not accurate:** (b) has no basis in the Quran, hadith, or physics; oxygen levels and cosmic-ray shielding do not multiply human lifespan tenfold, and there is no textual reason to defend revelation with borrowed pseudo-science. (a) is a category error: the Quran presents the figure as a fact of revelation about one prophet, not as a claim about human biology in general. 29:14: فَلَبِثَ فِيهِمْ أَلْفَ سَنَةً إِلَّا خَمْسِينَ عَامًا, "he remained among them a thousand years less fifty" (Ibn Kathir: his period of da'wah; total lifespan reported variously, e.g. Ibn Abbas 1,050 years, in al-Bidaya). Adam's lifespan of 1,000 years is likewise in a hasan hadith (Tirmidhi 3076). A Muslim affirms it as خبر صادق, the same way he affirms the splitting of the sea, without inventing an atmosphere.
 
-**Authentic position (source):** Quran 29:14; Ibn Kathir's tafsir on 29:14 and al-Bidaya, qissat Nuh; Tirmidhi 3076 (Adam's 1,000 years). Do not use canopy-theory arguments in the episode.
+**Authentic position (source):** Quran 29:14; Ibn Kathir's tafsir on 29:14 and al-Bidaya, qissat Nuh; Tirmidhi 3368 (Adam's 1,000 years; the sneeze hadith; Tirmidhi 3076 is the forty-years-to-Dawud hadith and states no lifespan). Do not use canopy-theory arguments in the episode.
 
 ---
 

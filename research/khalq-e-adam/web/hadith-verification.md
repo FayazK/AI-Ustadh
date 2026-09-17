@@ -405,7 +405,7 @@
 
 ### 12.2 "The six days of creation were 6,000 years" (Ibn Kathir's note)
 
-- **Text (summary):** Ibn Kathir, al-Bidaya 1/214: some held that the six days of creation "were each a thousand years, as reported from Ibn Abbas, Mujahid and al-Dahhak, and chosen by Ibn Jarir", who then computed: Adam was created in the last hour of Friday; an hour is 83 years and 4 months; he lay as shaped clay 40 years before the rooh was breathed, and stayed in Paradise 43 years and 4 months before descending. Ibn Kathir: «وفي هذا نظر» ("this is doubtful").
+- **Text (summary):** Ibn Kathir, al-Bidaya 1/214: some held that the six days of creation "were each a thousand years, as reported from Ibn Abbas, Mujahid and al-Dahhak, and chosen by Ibn Jarir", who then computed: Adam was created in the last hour of Friday; an hour is 83 years and 4 months; he lay as shaped clay 40 years before the rooh was breathed, and stayed in Paradise 43 years and 4 months before descending. CORRECTION 2026-09-17 (page re-read on shamela 4445/213): Ibn Kathir's «وفي هذا نظر» here falls on the ordinary-days / "part of a day in Paradise" option; the 6,000-year computation is merely reported and closed with «والله تعالى أعلم». The second «وفي هذا نظر» on the page is on the "head in the sky" report. Do not cite 1/214 as Ibn Kathir rejecting the 6,000-year computation.
 - **Source:** Al-Bidaya 1/214; Tafsir al-Tabari on 7:54.
 - **Grade:** Exegetical calculation on the athar; no marfu' basis.
 - **Link:** https://shamela.ws/book/4445/213
@@ -522,7 +522,8 @@
 | "In His image" | Bukhari 6227 / Muslim 2612 | Sahih; "surat al-Rahman" addition disputed (Ibn Khuzaymah, Daraqutni, Albani weaken; Hakim, Ibn Taymiyyah, Ibn Baz accept) |
 | Adam-Musa debate | Bukhari 6614 | Sahih |
 | Alast: Umar's hadith | Tirmidhi 3075 / Muwatta 46:2 / Abu Dawud 4703 | Hasan (Tirmidhi) with a break; da'if (Darussalam); sahih except "wiping the back" (Albani) |
-| Adam 1,000 years; 40 to Dawud | Tirmidhi 3076 | Hasan sahih (Tirmidhi), hasan (Darussalam), sahih on Muslim's conditions (Hakim) |
+| Adam gives 40 years to Dawud (no lifespan for Adam stated) | Tirmidhi 3076 | Hasan sahih (Tirmidhi), hasan (Darussalam), sahih on Muslim's conditions (Hakim) |
+| Adam's 1,000 years ("a thousand years were written for me"; 60 to Dawud; the sneeze hadith) | Tirmidhi 3368 | Hasan gharib (Tirmidhi); hasan sahih (Albani, Sahih al-Tirmidhi 3368); hasan (Darussalam); sahih (Hakim 216). CORRECTION 2026-09-17: earlier drafts attributed the 1,000 years to 3076; 3076 contains no lifespan for Adam. |
 | Hawwa's name | Bukhari 3330 / Muslim 1470 | Sahih |
 | "Sent to the red and the black" | Muslim 521 | Sahih |
 | Hears of me and disbelieves, enters the Fire | Muslim 153 | Sahih |

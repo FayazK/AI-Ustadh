@@ -299,7 +299,7 @@ Every major world religion originated in Asia. Greek and Roman religion, Norse r
 - **March 2025:** eLife publishes the revised Homo naledi burial paper (Berger et al., eLife reviewed preprint 89106, version 2); reviewers remain divided.
 - **10 April 2025:** Penghu 1 jaw from Taiwan identified as Denisovan by protein analysis (Tsutaya et al., Science 388, DOI 10.1126/science.ads3888). Denisovan range confirmed from Siberia to the tropics.
 - **30 April 2025:** Cogitate Consortium publishes the adversarial test of GNWT and IIT in Nature (DOI 10.1038/s41586-025-08888-1); both theories fail some predictions.
-- **18 June 2025:** The Harbin "Dragon Man" cranium (at least 146 ka) is shown to be Denisovan by proteins (Fu et al., Science 388, DOI 10.1126/science.adu9677) and by mitochondrial DNA from dental calculus (Fu et al., Cell 188, DOI 10.1016/j.cell.2025.05.040). First Denisovan skull.
+- **18 June 2025:** The Harbin "Dragon Man" cranium (at least 146 ka) is shown to be Denisovan by proteins (Fu et al., Science 389 (print 14 Aug 2025; online 18 June 2025), DOI 10.1126/science.adu9677) and by mitochondrial DNA from dental calculus (Fu et al., Cell 188, DOI 10.1016/j.cell.2025.05.040). First Denisovan skull.
 - **13 August 2025:** Early Homo (2.78-2.59 Ma) and a new Australopithecus species (2.63 Ma) coexisted at Ledi-Geraru, Ethiopia (Villmoare et al., Nature, online 13 Aug 2025; print 12 Feb 2026, vol. 650: 374-380, DOI 10.1038/s41586-025-09390-4).
 - **25 August to 23 October 2025:** Lucy and Selam exhibited in Prague, first time in Europe (National Museum of the Czech Republic).
 - **8 October 2025:** Omar Yaghi shares the Nobel Prize in Chemistry (nobelprize.org).
